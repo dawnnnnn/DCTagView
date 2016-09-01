@@ -10,12 +10,14 @@
 
 @implementation DCTextField
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+//控制placeHolder 的位置，左右缩 8px
+- (CGRect)textRectForBounds:(CGRect)bounds {
+    return CGRectInset(bounds , 0, 5);
 }
-*/
+
+// 控制文本的位置，左右缩 8px
+- (CGRect)editingRectForBounds:(CGRect)bounds {
+    return CGRectInset(bounds , 0, 5);
+}
 
 @end
