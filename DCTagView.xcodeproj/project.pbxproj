@@ -20,6 +20,7 @@
 		F462F2561D7831D600CB8899 /* DCTag.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2551D7831D600CB8899 /* DCTag.m */; };
 		F462F2591D7831F100CB8899 /* DCTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2581D7831F100CB8899 /* DCTagButton.m */; };
 		F462F25C1D78320700CB8899 /* DCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F25B1D78320700CB8899 /* DCTextField.m */; };
+		F462F2601D78424000CB8899 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F25F1D78424000CB8899 /* UIColor+Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		F462F2581D7831F100CB8899 /* DCTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCTagButton.m; path = TagView/DCTagButton.m; sourceTree = "<group>"; };
 		F462F25A1D78320700CB8899 /* DCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCTextField.h; path = TagView/DCTextField.h; sourceTree = "<group>"; };
 		F462F25B1D78320700CB8899 /* DCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCTextField.m; path = TagView/DCTextField.m; sourceTree = "<group>"; };
+		F462F25E1D78424000CB8899 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helper.h"; path = "Categories/UIColor+Helper.h"; sourceTree = "<group>"; };
+		F462F25F1D78424000CB8899 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helper.m"; path = "Categories/UIColor+Helper.m"; sourceTree = "<group>"; };
 		FF40B1DA4A73C7584843B4AF /* libPods-DCTagView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DCTagView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +132,7 @@
 		F462F21C1D78286400CB8899 /* DCTagView */ = {
 			isa = PBXGroup;
 			children = (
+				F462F25D1D78420600CB8899 /* Categories */,
 				F462F2501D78304E00CB8899 /* TagView */,
 				F462F2201D78286400CB8899 /* AppDelegate.h */,
 				F462F2211D78286400CB8899 /* AppDelegate.m */,
@@ -182,6 +186,15 @@
 				F462F25B1D78320700CB8899 /* DCTextField.m */,
 			);
 			name = TagView;
+			sourceTree = "<group>";
+		};
+		F462F25D1D78420600CB8899 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F462F25E1D78424000CB8899 /* UIColor+Helper.h */,
+				F462F25F1D78424000CB8899 /* UIColor+Helper.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		F76C8ECE0C870F7A2E4D4BDA /* Frameworks */ = {
@@ -376,6 +389,7 @@
 				F462F2531D7831A200CB8899 /* DCTagView.m in Sources */,
 				F462F2561D7831D600CB8899 /* DCTag.m in Sources */,
 				F462F2251D78286400CB8899 /* ViewController.m in Sources */,
+				F462F2601D78424000CB8899 /* UIColor+Helper.m in Sources */,
 				F462F2221D78286400CB8899 /* AppDelegate.m in Sources */,
 				F462F21F1D78286400CB8899 /* main.m in Sources */,
 				F462F25C1D78320700CB8899 /* DCTextField.m in Sources */,
