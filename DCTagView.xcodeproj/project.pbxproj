@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F462F21F1D78286400CB8899 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F21E1D78286400CB8899 /* main.m */; };
+		F462F2221D78286400CB8899 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2211D78286400CB8899 /* AppDelegate.m */; };
+		F462F2251D78286400CB8899 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2241D78286400CB8899 /* ViewController.m */; };
+		F462F2281D78286400CB8899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F462F2261D78286400CB8899 /* Main.storyboard */; };
+		F462F22A1D78286400CB8899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F462F2291D78286400CB8899 /* Assets.xcassets */; };
+		F462F22D1D78286400CB8899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F462F22B1D78286400CB8899 /* LaunchScreen.storyboard */; };
+		F462F2381D78286400CB8899 /* DCTagViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2371D78286400CB8899 /* DCTagViewTests.m */; };
+		F462F2431D78286400CB8899 /* DCTagViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2421D78286400CB8899 /* DCTagViewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F462F2341D78286400CB8899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F462F2121D78286400CB8899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F462F2191D78286400CB8899;
+			remoteInfo = DCTagView;
+		};
+		F462F23F1D78286400CB8899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F462F2121D78286400CB8899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F462F2191D78286400CB8899;
+			remoteInfo = DCTagView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F462F21A1D78286400CB8899 /* DCTagView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCTagView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F462F21E1D78286400CB8899 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F462F2201D78286400CB8899 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F462F2211D78286400CB8899 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F462F2231D78286400CB8899 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F462F2241D78286400CB8899 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F462F2271D78286400CB8899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F462F2291D78286400CB8899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F462F22C1D78286400CB8899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F462F22E1D78286400CB8899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F462F2331D78286400CB8899 /* DCTagViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCTagViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F462F2371D78286400CB8899 /* DCTagViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTagViewTests.m; sourceTree = "<group>"; };
+		F462F2391D78286400CB8899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F462F23E1D78286400CB8899 /* DCTagViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCTagViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F462F2421D78286400CB8899 /* DCTagViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTagViewUITests.m; sourceTree = "<group>"; };
+		F462F2441D78286400CB8899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F462F2171D78286400CB8899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F462F2301D78286400CB8899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F462F23B1D78286400CB8899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F462F2111D78286400CB8899 = {
+			isa = PBXGroup;
+			children = (
+				F462F21C1D78286400CB8899 /* DCTagView */,
+				F462F2361D78286400CB8899 /* DCTagViewTests */,
+				F462F2411D78286400CB8899 /* DCTagViewUITests */,
+				F462F21B1D78286400CB8899 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F462F21B1D78286400CB8899 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F462F21A1D78286400CB8899 /* DCTagView.app */,
+				F462F2331D78286400CB8899 /* DCTagViewTests.xctest */,
+				F462F23E1D78286400CB8899 /* DCTagViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F462F21C1D78286400CB8899 /* DCTagView */ = {
+			isa = PBXGroup;
+			children = (
+				F462F2201D78286400CB8899 /* AppDelegate.h */,
+				F462F2211D78286400CB8899 /* AppDelegate.m */,
+				F462F2231D78286400CB8899 /* ViewController.h */,
+				F462F2241D78286400CB8899 /* ViewController.m */,
+				F462F2261D78286400CB8899 /* Main.storyboard */,
+				F462F2291D78286400CB8899 /* Assets.xcassets */,
+				F462F22B1D78286400CB8899 /* LaunchScreen.storyboard */,
+				F462F22E1D78286400CB8899 /* Info.plist */,
+				F462F21D1D78286400CB8899 /* Supporting Files */,
+			);
+			path = DCTagView;
+			sourceTree = "<group>";
+		};
+		F462F21D1D78286400CB8899 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F462F21E1D78286400CB8899 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F462F2361D78286400CB8899 /* DCTagViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				F462F2371D78286400CB8899 /* DCTagViewTests.m */,
+				F462F2391D78286400CB8899 /* Info.plist */,
+			);
+			path = DCTagViewTests;
+			sourceTree = "<group>";
+		};
+		F462F2411D78286400CB8899 /* DCTagViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F462F2421D78286400CB8899 /* DCTagViewUITests.m */,
+				F462F2441D78286400CB8899 /* Info.plist */,
+			);
+			path = DCTagViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F462F2191D78286400CB8899 /* DCTagView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F462F2471D78286400CB8899 /* Build configuration list for PBXNativeTarget "DCTagView" */;
+			buildPhases = (
+				F462F2161D78286400CB8899 /* Sources */,
+				F462F2171D78286400CB8899 /* Frameworks */,
+				F462F2181D78286400CB8899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCTagView;
+			productName = DCTagView;
+			productReference = F462F21A1D78286400CB8899 /* DCTagView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F462F2321D78286400CB8899 /* DCTagViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F462F24A1D78286400CB8899 /* Build configuration list for PBXNativeTarget "DCTagViewTests" */;
+			buildPhases = (
+				F462F22F1D78286400CB8899 /* Sources */,
+				F462F2301D78286400CB8899 /* Frameworks */,
+				F462F2311D78286400CB8899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F462F2351D78286400CB8899 /* PBXTargetDependency */,
+			);
+			name = DCTagViewTests;
+			productName = DCTagViewTests;
+			productReference = F462F2331D78286400CB8899 /* DCTagViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F462F23D1D78286400CB8899 /* DCTagViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F462F24D1D78286400CB8899 /* Build configuration list for PBXNativeTarget "DCTagViewUITests" */;
+			buildPhases = (
+				F462F23A1D78286400CB8899 /* Sources */,
+				F462F23B1D78286400CB8899 /* Frameworks */,
+				F462F23C1D78286400CB8899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F462F2401D78286400CB8899 /* PBXTargetDependency */,
+			);
+			name = DCTagViewUITests;
+			productName = DCTagViewUITests;
+			productReference = F462F23E1D78286400CB8899 /* DCTagViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F462F2121D78286400CB8899 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = dawnnnnn;
+				TargetAttributes = {
+					F462F2191D78286400CB8899 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F462F2321D78286400CB8899 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F462F2191D78286400CB8899;
+					};
+					F462F23D1D78286400CB8899 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F462F2191D78286400CB8899;
+					};
+				};
+			};
+			buildConfigurationList = F462F2151D78286400CB8899 /* Build configuration list for PBXProject "DCTagView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F462F2111D78286400CB8899;
+			productRefGroup = F462F21B1D78286400CB8899 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F462F2191D78286400CB8899 /* DCTagView */,
+				F462F2321D78286400CB8899 /* DCTagViewTests */,
+				F462F23D1D78286400CB8899 /* DCTagViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F462F2181D78286400CB8899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F462F22D1D78286400CB8899 /* LaunchScreen.storyboard in Resources */,
+				F462F22A1D78286400CB8899 /* Assets.xcassets in Resources */,
+				F462F2281D78286400CB8899 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F462F2311D78286400CB8899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F462F23C1D78286400CB8899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F462F2161D78286400CB8899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F462F2251D78286400CB8899 /* ViewController.m in Sources */,
+				F462F2221D78286400CB8899 /* AppDelegate.m in Sources */,
+				F462F21F1D78286400CB8899 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F462F22F1D78286400CB8899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F462F2381D78286400CB8899 /* DCTagViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F462F23A1D78286400CB8899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F462F2431D78286400CB8899 /* DCTagViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F462F2351D78286400CB8899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F462F2191D78286400CB8899 /* DCTagView */;
+			targetProxy = F462F2341D78286400CB8899 /* PBXContainerItemProxy */;
+		};
+		F462F2401D78286400CB8899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F462F2191D78286400CB8899 /* DCTagView */;
+			targetProxy = F462F23F1D78286400CB8899 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F462F2261D78286400CB8899 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F462F2271D78286400CB8899 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F462F22B1D78286400CB8899 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F462F22C1D78286400CB8899 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F462F2451D78286400CB8899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F462F2461D78286400CB8899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F462F2481D78286400CB8899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DCTagView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oopser.DCTagView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F462F2491D78286400CB8899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DCTagView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oopser.DCTagView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F462F24B1D78286400CB8899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DCTagViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oopser.DCTagViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCTagView.app/DCTagView";
+			};
+			name = Debug;
+		};
+		F462F24C1D78286400CB8899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DCTagViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oopser.DCTagViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCTagView.app/DCTagView";
+			};
+			name = Release;
+		};
+		F462F24E1D78286400CB8899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DCTagViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oopser.DCTagViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DCTagView;
+			};
+			name = Debug;
+		};
+		F462F24F1D78286400CB8899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DCTagViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oopser.DCTagViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DCTagView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F462F2151D78286400CB8899 /* Build configuration list for PBXProject "DCTagView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F462F2451D78286400CB8899 /* Debug */,
+				F462F2461D78286400CB8899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F462F2471D78286400CB8899 /* Build configuration list for PBXNativeTarget "DCTagView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F462F2481D78286400CB8899 /* Debug */,
+				F462F2491D78286400CB8899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F462F24A1D78286400CB8899 /* Build configuration list for PBXNativeTarget "DCTagViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F462F24B1D78286400CB8899 /* Debug */,
+				F462F24C1D78286400CB8899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F462F24D1D78286400CB8899 /* Build configuration list for PBXNativeTarget "DCTagViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F462F24E1D78286400CB8899 /* Debug */,
+				F462F24F1D78286400CB8899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F462F2121D78286400CB8899 /* Project object */;
+}
