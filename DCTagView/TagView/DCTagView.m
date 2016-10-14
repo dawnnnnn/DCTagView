@@ -23,11 +23,11 @@
 @implementation DCTagView
 
 #pragma mark - init
-- (instancetype)initWithState:(TagViewState)state {
+- (instancetype)initWithState:(DCTagViewState)state {
     self = [super init];
     if (self) {
         self.state = state;
-        if (self.state == TagViewStateEdit) {
+        if (self.state == DCTagViewStateEdit) {
             [self addSubview:self.inputText];
             UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(willInput)];
             [self addGestureRecognizer:tapGes];
@@ -125,7 +125,7 @@
     //    if (self.didSetup || !self.tags.count) {
     //        return;
     //    }
-    if (self.state == TagViewStateEdit) {
+    if (self.state == DCTagViewStateEdit) {
         [self bringSubviewToFront:self.inputText];
     }
     
@@ -218,7 +218,7 @@
 - (void)addTag: (DCTag *)tag {
     NSParameterAssert(tag);
     DCTagButton *btn = [DCTagButton buttonWithTag: tag];
-    if (self.state == TagViewStateEdit) {
+    if (self.state == DCTagViewStateEdit) {
         [btn addTarget: self action: @selector(onTag:) forControlEvents: UIControlEventTouchUpInside];
         self.inputText.text = @"";
     }
@@ -235,7 +235,7 @@
         [self addTag: tag];
     } else {
         DCTagButton *btn = [DCTagButton buttonWithTag: tag];
-        if (self.state == TagViewStateEdit) {
+        if (self.state == DCTagViewStateEdit) {
             [btn addTarget: self action: @selector(onTag:) forControlEvents: UIControlEventTouchUpInside];
         }
         [self insertSubview: btn atIndex: index];

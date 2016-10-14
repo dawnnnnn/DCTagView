@@ -12,12 +12,12 @@
 #import "DCTagButton.h"
 #import "DCTextField.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
-typedef NS_ENUM(NSInteger, TagViewState) {
-    TagViewStateShow    = 0,
-    TagViewStateEdit    = 1
+typedef NS_ENUM(NSInteger, DCTagViewState) {
+    DCTagViewStateShow    = 0,
+    DCTagViewStateEdit    = 1
 };
+
+NS_ASSUME_NONNULL_BEGIN
 
 @protocol SFTagViewDelegate <NSObject>
 
@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, TagViewState) {
 
 @interface DCTagView : UIView
 
-@property (nonatomic, assign) TagViewState state;
+@property (nonatomic, assign) DCTagViewState state;
 @property (nonatomic, assign) UIEdgeInsets padding;
 @property (nonatomic, assign) CGFloat lineSpacing;
 @property (nonatomic, assign) CGFloat interitemSpacing;
@@ -42,7 +42,7 @@ typedef NS_ENUM(NSInteger, TagViewState) {
 
 @property (nonatomic, strong) DCTextField *inputText;
 
-- (instancetype)initWithState:(TagViewState)state;
+- (instancetype)initWithState:(DCTagViewState)state;
 
 - (void)addTag:(DCTag *)tag;
 - (void)insertTag:(DCTag *)tag atIndex:(NSUInteger)index;
