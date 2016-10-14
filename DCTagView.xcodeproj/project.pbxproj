@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		087196F21E11823197EE4F26 /* libPods-DCTagView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF40B1DA4A73C7584843B4AF /* libPods-DCTagView.a */; };
+		F425BF351DB121990052E4F4 /* DCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F425BF341DB121990052E4F4 /* DCTableViewController.m */; };
 		F462F21F1D78286400CB8899 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F21E1D78286400CB8899 /* main.m */; };
 		F462F2221D78286400CB8899 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2211D78286400CB8899 /* AppDelegate.m */; };
 		F462F2251D78286400CB8899 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2241D78286400CB8899 /* ViewController.m */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		C049AAB3756C57EEF527C0B4 /* Pods-DCTagView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTagView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCTagView/Pods-DCTagView.release.xcconfig"; sourceTree = "<group>"; };
 		F05A614A7653A57AF509EF00 /* Pods-DCTagView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTagView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCTagView/Pods-DCTagView.debug.xcconfig"; sourceTree = "<group>"; };
+		F425BF331DB121990052E4F4 /* DCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTableViewController.h; sourceTree = "<group>"; };
+		F425BF341DB121990052E4F4 /* DCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTableViewController.m; sourceTree = "<group>"; };
 		F462F21A1D78286400CB8899 /* DCTagView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCTagView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F462F21E1D78286400CB8899 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F462F2201D78286400CB8899 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				F462F22B1D78286400CB8899 /* LaunchScreen.storyboard */,
 				F462F22E1D78286400CB8899 /* Info.plist */,
 				F462F21D1D78286400CB8899 /* Supporting Files */,
+				F425BF331DB121990052E4F4 /* DCTableViewController.h */,
+				F425BF341DB121990052E4F4 /* DCTableViewController.m */,
 			);
 			path = DCTagView;
 			sourceTree = "<group>";
@@ -391,6 +396,7 @@
 				F462F2251D78286400CB8899 /* ViewController.m in Sources */,
 				F462F2601D78424000CB8899 /* UIColor+Helper.m in Sources */,
 				F462F2221D78286400CB8899 /* AppDelegate.m in Sources */,
+				F425BF351DB121990052E4F4 /* DCTableViewController.m in Sources */,
 				F462F21F1D78286400CB8899 /* main.m in Sources */,
 				F462F25C1D78320700CB8899 /* DCTextField.m in Sources */,
 				F462F2591D7831F100CB8899 /* DCTagButton.m in Sources */,

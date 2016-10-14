@@ -301,19 +301,19 @@
 }
 
 #pragma mark - textfiel delegate
-//- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-//    if (textField.text) {
-//        SKTag *tag = [SKTag tagWithText:textField.text];
-//        tag.textColor = [UIColor hx_colorWithHexString:@"#009A61"];
-//        tag.fontSize = 15;
-//        tag.padding = UIEdgeInsetsMake(5, 5, 5, 5);
-//        tag.bgColor = [UIColor hx_colorWithHexString:@"#017E66" alpha:0.08];
-//        tag.cornerRadius = 3;
-//        [self addTag:tag];
-//        self.inputText.text = @"";
-//    }
-//    return YES;
-//}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField.text) {
+        DCTag *tag = [DCTag tagWithText:textField.text];
+        tag.textColor = [UIColor dc_colorWithHexString:@"#009A61"];
+        tag.fontSize = 15;
+        tag.padding = UIEdgeInsetsMake(5, 5, 5, 5);
+        tag.bgColor = [UIColor dc_colorWithHexString:@"#017E66" alpha:0.08];
+        tag.cornerRadius = 3;
+        [self addTag:tag];
+        self.inputText.text = @"";
+    }
+    return YES;
+}
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
