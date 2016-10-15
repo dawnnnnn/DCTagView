@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, DCTagViewState) {
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol SFTagViewDelegate <NSObject>
+@protocol DCTagViewDelegate <NSObject>
 
 - (void)didInputText:(NSString *)text;
 - (void)deleteTag:(NSInteger)index;
@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 //@property (copy, nonatomic, nullable) void (^didTapTagAtIndex)(NSUInteger index);
 @property (nonatomic, strong, readonly) NSMutableArray *tags;
 
-@property (nonatomic, weak) id<SFTagViewDelegate> delegate;
+@property (nonatomic, weak) id<DCTagViewDelegate> delegate;
 
 @property (nonatomic, strong) DCTextField *inputText;
 
