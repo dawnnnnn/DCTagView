@@ -7,6 +7,7 @@
 //
 
 #import "DCTableViewController.h"
+#import "DCViewController.h"
 
 @interface DCTableViewController ()
 
@@ -49,6 +50,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    DCViewController *controller = [DCViewController new];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 
