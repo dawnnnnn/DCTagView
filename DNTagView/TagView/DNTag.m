@@ -1,16 +1,16 @@
 //
-//  DCTag.m
-//  DCTagView
+//  DNTag.m
+//  DNTagView
 //
 //  Created by dawnnnnn on 16/9/1.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
 //
 
-#import "DCTag.h"
+#import "DNTag.h"
 
 static CGFloat const kDefaultFontSize = 14.0;
 
-@implementation DCTag
+@implementation DNTag
 
 - (instancetype)init {
     self = [super init];

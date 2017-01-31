@@ -1,33 +1,33 @@
 //
-//  DCTagView.m
-//  DCTagView
+//  DNTagView.m
+//  DNTagView
 //
 //  Created by dawnnnnn on 16/9/1.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
 //
 
-#import "DCTagView.h"
+#import "DNTagView.h"
 #import "UIColor+Helper.h"
 
-@interface DCTagView ()<UITextFieldDelegate>
+@interface DNTagView ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) NSMutableArray *tags;
 @property (nonatomic, assign) BOOL didSetup;
 
-@property (nonatomic, strong) DCTagButton *tmpButton;
+@property (nonatomic, strong) DNTagButton *tmpButton;
 @property (nonatomic, assign) NSInteger viewIndex, tagIndex;
 
 @end
 
 
-@implementation DCTagView
+@implementation DNTagView
 
 #pragma mark - init
-- (instancetype)initWithState:(DCTagViewState)state {
+- (instancetype)initWithState:(DNTagViewState)state {
     self = [super init];
     if (self) {
         self.state = state;
-        if (self.state == DCTagViewStateEdit) {
+        if (self.state == DNTagViewStateEdit) {
             [self addSubview:self.inputText];
             UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(willInput)];
             [self addGestureRecognizer:tapGes];
@@ -125,7 +125,7 @@
     //    if (self.didSetup || !self.tags.count) {
     //        return;
     //    }
-    if (self.state == DCTagViewStateEdit) {
+    if (self.state == DNTagViewStateEdit) {
         [self bringSubviewToFront:self.inputText];
     }
     
@@ -176,14 +176,14 @@
 
 #pragma mark - IBActions
 
-- (void)onTag:(DCTagButton *)btn {
+- (void)onTag:(DNTagButton *)btn {
     //    if (self.didTapTagAtIndex) {
     //        self.didTapTagAtIndex([self.subviews indexOfObject: btn]);
     //    }
     //    [self removeTagAtIndex:[self.subviews indexOfObject:btn]];
     
     self.tmpButton.selected = NO;
-    [self.tmpButton setBackgroundColor:[UIColor dc_colorWithHexString:@"0x017E66" alpha:0.08]];
+    [self.tmpButton setBackgroundColor:[UIColor dn_colorWithHexString:@"0x017E66" alpha:0.08]];
     self.tmpButton = btn;
     self.viewIndex = [self.subviews indexOfObject:btn];
     self.tagIndex = [self.tags indexOfObject:btn.mtag.text];
@@ -215,10 +215,10 @@
 
 #pragma mark - Public
 
-- (void)addTag: (DCTag *)tag {
+- (void)addTag: (DNTag *)tag {
     NSParameterAssert(tag);
-    DCTagButton *btn = [DCTagButton buttonWithTag: tag];
-    if (self.state == DCTagViewStateEdit) {
+    DNTagButton *btn = [DNTagButton buttonWithTag: tag];
+    if (self.state == DNTagViewStateEdit) {
         [btn addTarget: self action: @selector(onTag:) forControlEvents: UIControlEventTouchUpInside];
         self.inputText.text = @"";
     }
@@ -229,13 +229,13 @@
     [self invalidateIntrinsicContentSize];
 }
 
-- (void)insertTag:(DCTag *)tag atIndex:(NSUInteger)index {
+- (void)insertTag:(DNTag *)tag atIndex:(NSUInteger)index {
     NSParameterAssert(tag);
     if (index + 1 > self.tags.count) {
         [self addTag: tag];
     } else {
-        DCTagButton *btn = [DCTagButton buttonWithTag: tag];
-        if (self.state == DCTagViewStateEdit) {
+        DNTagButton *btn = [DNTagButton buttonWithTag: tag];
+        if (self.state == DNTagViewStateEdit) {
             [btn addTarget: self action: @selector(onTag:) forControlEvents: UIControlEventTouchUpInside];
         }
         [self insertSubview: btn atIndex: index];
@@ -246,7 +246,7 @@
     }
 }
 
-- (void)removeTag:(DCTag *)tag {
+- (void)removeTag:(DNTag *)tag {
     NSParameterAssert(tag);
     NSUInteger index = [self.tags indexOfObject: tag.text];
     if (NSNotFound == index) {
@@ -288,12 +288,12 @@
 
 - (void)makeButtonHighlight {
     self.tmpButton.selected = YES;
-    [self.tmpButton setBackgroundColor:[UIColor dc_colorWithHexString:@"#009A61"]];
+    [self.tmpButton setBackgroundColor:[UIColor dn_colorWithHexString:@"#009A61"]];
 }
 
 - (void)makeButtonNormal {
     self.tmpButton.selected = NO;
-    [self.tmpButton setBackgroundColor:[UIColor dc_colorWithHexString:@"#017E66" alpha:0.08]];
+    [self.tmpButton setBackgroundColor:[UIColor dn_colorWithHexString:@"#017E66" alpha:0.08]];
 }
 
 - (void)willInput {
@@ -303,11 +303,11 @@
 #pragma mark - textfiel delegate
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if (textField.text) {
-        DCTag *tag = [DCTag tagWithText:textField.text];
-        tag.textColor = [UIColor dc_colorWithHexString:@"#009A61"];
+        DNTag *tag = [DNTag tagWithText:textField.text];
+        tag.textColor = [UIColor dn_colorWithHexString:@"#009A61"];
         tag.fontSize = 15;
         tag.padding = UIEdgeInsetsMake(5, 5, 5, 5);
-        tag.bgColor = [UIColor dc_colorWithHexString:@"#017E66" alpha:0.08];
+        tag.bgColor = [UIColor dn_colorWithHexString:@"#017E66" alpha:0.08];
         tag.cornerRadius = 3;
         [self addTag:tag];
         self.inputText.text = @"";
@@ -332,9 +332,9 @@
 
 
 #pragma mark - getter
-- (DCTextField *)inputText {
+- (DNTextField *)inputText {
     if (!_inputText) {
-        DCTextField *textField = [DCTextField new];
+        DNTextField *textField = [DNTextField new];
         textField.textColor = [UIColor blackColor];
         textField.font = [UIFont systemFontOfSize:15];
         textField.placeholder = @"输入标签";

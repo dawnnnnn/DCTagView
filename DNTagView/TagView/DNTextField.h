@@ -1,6 +1,6 @@
 //
-//  ViewController.h
-//  DCTagView
+//  DNTextField.h
+//  DNTagView
 //
 //  Created by dawnnnnn on 16/9/1.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DNTextField : UITextField
 
 @end
-

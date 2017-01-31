@@ -1,27 +1,27 @@
 //
-//  DCViewController.m
-//  DCTagView
+//  DNViewController.m
+//  DNTagView
 //
 //  Created by dawnnnnn on 2016/10/15.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
 //
 
-#import "DCViewController.h"
+#import "DNViewController.h"
 
-#import "DCTagView.h"
+#import "DNTagView.h"
 
 #import "UIColor+Helper.h"
 #import <Masonry.h>
 
-@interface DCViewController ()<DCTagViewDelegate>
+@interface DNViewController ()<DNTagViewDelegate>
 
-@property (nonatomic, strong) DCTagView *tagView;
+@property (nonatomic, strong) DNTagView *tagView;
 
 @property (nonatomic, strong) NSArray *dataArray;
 
 @end
 
-@implementation DCViewController
+@implementation DNViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,9 +53,9 @@
 
 
 #pragma mark - getter
-- (DCTagView *)tagView {
+- (DNTagView *)tagView {
     if (!_tagView) {
-        DCTagView *view = [[DCTagView alloc]initWithState:DCTagViewStateEdit];
+        DNTagView *view = [[DNTagView alloc]initWithState:DNTagViewStateEdit];
         view.backgroundColor = [UIColor whiteColor];
         view.padding = UIEdgeInsetsMake(10, 15, 10, 15);
         view.interitemSpacing = 10;
@@ -67,12 +67,12 @@
     return _tagView;
 }
 
-- (DCTag *)buildTag:(NSString *)tagName {
-    DCTag *tag = [DCTag tagWithText:tagName];
+- (DNTag *)buildTag:(NSString *)tagName {
+    DNTag *tag = [DNTag tagWithText:tagName];
     tag.textColor = [UIColor blackColor];
     tag.fontSize = 15;
     tag.padding = UIEdgeInsetsMake(5, 5, 5, 5);
-    tag.bgColor = [UIColor dc_colorWithHexString:@"0x017E66" alpha:0.08];
+    tag.bgColor = [UIColor dn_colorWithHexString:@"0x017E66" alpha:0.08];
     tag.cornerRadius = 3;
     return tag;
 }

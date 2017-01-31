@@ -1,14 +1,14 @@
 //
-//  DCTextField.m
-//  DCTagView
+//  DNTextField.m
+//  DNTagView
 //
 //  Created by dawnnnnn on 16/9/1.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
 //
 
-#import "DCTextField.h"
+#import "DNTextField.h"
 
-@implementation DCTextField
+@implementation DNTextField
 
 //控制placeHolder 的位置，左右缩 8px
 - (CGRect)textRectForBounds:(CGRect)bounds {

@@ -1,6 +1,6 @@
 //
-//  DCTagButton.h
-//  DCTagView
+//  DNTagButton.h
+//  DNTagView
 //
 //  Created by dawnnnnn on 16/9/1.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
@@ -9,15 +9,15 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-#import "DCTag.h"
+#import "DNTag.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DCTagButton : UIButton
+@interface DNTagButton : UIButton
 
-@property (nonatomic, strong) DCTag *mtag;
+@property (nonatomic, strong) DNTag *mtag;
 
-+ (instancetype)buttonWithTag: (DCTag *)tag;
++ (instancetype)buttonWithTag: (DNTag *)tag;
 
 @end
 

@@ -1,6 +1,6 @@
 //
-//  DCTagViewTests.m
-//  DCTagViewTests
+//  DNTagViewTests.m
+//  DNTagViewTests
 //
 //  Created by dawnnnnn on 16/9/1.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface DCTagViewTests : XCTestCase
+@interface DNTagViewTests : XCTestCase
 
 @end
 
-@implementation DCTagViewTests
+@implementation DNTagViewTests
 
 - (void)setUp {
     [super setUp];

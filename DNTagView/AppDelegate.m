@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  DCTagView
+//  DNTagView
 //
 //  Created by dawnnnnn on 16/9/1.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "DCTableViewController.h"
+#import "DNTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
     
     self.window = [[UIWindow alloc]init];
     
-    DCTableViewController *controller = [DCTableViewController new];
+    DNTableViewController *controller = [DNTableViewController new];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:controller];
     self.window.rootViewController = nav;
     

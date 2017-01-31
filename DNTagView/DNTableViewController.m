@@ -1,21 +1,21 @@
 //
-//  DCTableViewController.m
-//  DCTagView
+//  DNTableViewController.m
+//  DNTagView
 //
 //  Created by dawnnnnn on 2016/10/14.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
 //
 
-#import "DCTableViewController.h"
-#import "DCViewController.h"
+#import "DNTableViewController.h"
+#import "DNViewController.h"
 
-@interface DCTableViewController ()
+@interface DNTableViewController ()
 
 @property (nonatomic, strong) NSArray *dataArray;
 
 @end
 
-@implementation DCTableViewController
+@implementation DNTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,7 +50,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    DCViewController *controller = [DCViewController new];
+    DNViewController *controller = [DNViewController new];
     [self.navigationController pushViewController:controller animated:YES];
 }
 

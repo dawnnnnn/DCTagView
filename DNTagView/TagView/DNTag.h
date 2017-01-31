@@ -1,6 +1,6 @@
 //
-//  DCTag.h
-//  DCTagView
+//  DNTag.h
+//  DNTagView
 //
 //  Created by dawnnnnn on 16/9/1.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DCTag : NSObject
+@interface DNTag : NSObject
 
 @property (nonatomic, copy) NSString *text;
 @property (nonatomic, copy) NSAttributedString *attributedText;

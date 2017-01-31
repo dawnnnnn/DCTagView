@@ -1,17 +1,17 @@
 //
-//  DCTagButton.m
-//  DCTagView
+//  DNTagButton.m
+//  DNTagView
 //
 //  Created by dawnnnnn on 16/9/1.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
 //
 
-#import "DCTagButton.h"
+#import "DNTagButton.h"
 
-@implementation DCTagButton
+@implementation DNTagButton
 
-+ (instancetype)buttonWithTag: (DCTag *)tag {
-    DCTagButton *btn = [super buttonWithType:UIButtonTypeCustom];
++ (instancetype)buttonWithTag: (DNTag *)tag {
+    DNTagButton *btn = [super buttonWithType:UIButtonTypeCustom];
     
     btn.mtag = tag;
     

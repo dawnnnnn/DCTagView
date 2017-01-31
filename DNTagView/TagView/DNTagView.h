@@ -1,6 +1,6 @@
 //
-//  DCTagView.h
-//  DCTagView
+//  DNTagView.h
+//  DNTagView
 //
 //  Created by dawnnnnn on 16/9/1.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
@@ -8,27 +8,27 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DCTag.h"
-#import "DCTagButton.h"
-#import "DCTextField.h"
+#import "DNTag.h"
+#import "DNTagButton.h"
+#import "DNTextField.h"
 
-typedef NS_ENUM(NSInteger, DCTagViewState) {
-    DCTagViewStateShow    = 0,
-    DCTagViewStateEdit    = 1
+typedef NS_ENUM(NSInteger, DNTagViewState) {
+    DNTagViewStateShow    = 0,
+    DNTagViewStateEdit    = 1
 };
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol DCTagViewDelegate <NSObject>
+@protocol DNTagViewDelegate <NSObject>
 
 - (void)didInputText:(NSString *)text;
 - (void)deleteTag:(NSInteger)index;
 
 @end
 
-@interface DCTagView : UIView
+@interface DNTagView : UIView
 
-@property (nonatomic, assign) DCTagViewState state;
+@property (nonatomic, assign) DNTagViewState state;
 @property (nonatomic, assign) UIEdgeInsets padding;
 @property (nonatomic, assign) CGFloat lineSpacing;
 @property (nonatomic, assign) CGFloat interitemSpacing;
@@ -38,15 +38,15 @@ NS_ASSUME_NONNULL_BEGIN
 //@property (copy, nonatomic, nullable) void (^didTapTagAtIndex)(NSUInteger index);
 @property (nonatomic, strong, readonly) NSMutableArray *tags;
 
-@property (nonatomic, weak) id<DCTagViewDelegate> delegate;
+@property (nonatomic, weak) id<DNTagViewDelegate> delegate;
 
-@property (nonatomic, strong) DCTextField *inputText;
+@property (nonatomic, strong) DNTextField *inputText;
 
-- (instancetype)initWithState:(DCTagViewState)state;
+- (instancetype)initWithState:(DNTagViewState)state;
 
-- (void)addTag:(DCTag *)tag;
-- (void)insertTag:(DCTag *)tag atIndex:(NSUInteger)index;
-- (void)removeTag:(DCTag *)tag;
+- (void)addTag:(DNTag *)tag;
+- (void)insertTag:(DNTag *)tag atIndex:(NSUInteger)index;
+- (void)removeTag:(DNTag *)tag;
 - (void)removeTagAtIndex:(NSUInteger)index;
 - (void)removeAllTags;
 
