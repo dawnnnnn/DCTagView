@@ -27,7 +27,8 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    [self initialize];
+    
+    [self viewAddSubviews];
     
     self.dataArray = @[@"python", @"Objective-C", @"Java", @"JavaScript", @"HTML", @"Php", @"Swift"].copy;
     
@@ -36,7 +37,7 @@
     }];
 }
 
-- (void)initialize {
+- (void)viewAddSubviews {
     
     [self.view addSubview:self.tagView];
     
@@ -54,15 +55,14 @@
 
 #pragma mark - getter
 - (DNTagView *)tagView {
-    if (!_tagView) {
-        DNTagView *view = [[DNTagView alloc]initWithState:DNTagViewStateEdit];
-        view.backgroundColor = [UIColor whiteColor];
-        view.padding = UIEdgeInsetsMake(10, 15, 10, 15);
-        view.interitemSpacing = 10;
-        view.lineSpacing = 10;
-        view.delegate = self;
-        [view.inputText becomeFirstResponder];
-        _tagView = view;
+    if (_tagView == nil) {
+        _tagView = [[DNTagView alloc]initWithState:DNTagViewStateEdit];
+        _tagView.backgroundColor = [UIColor whiteColor];
+        _tagView.padding = UIEdgeInsetsMake(10, 15, 10, 15);
+        _tagView.interitemSpacing = 10;
+        _tagView.lineSpacing = 10;
+        _tagView.delegate = self;
+//        [_tagView.inputText becomeFirstResponder];
     }
     return _tagView;
 }

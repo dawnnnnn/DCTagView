@@ -23,6 +23,7 @@
 @implementation DNTagView
 
 #pragma mark - init
+
 - (instancetype)initWithState:(DNTagViewState)state {
     self = [super init];
     if (self) {
