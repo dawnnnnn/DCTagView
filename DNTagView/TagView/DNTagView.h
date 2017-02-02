@@ -51,9 +51,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeTagAtIndex:(NSUInteger)index;
 - (void)removeAllTags;
 
-- (void)makeButtonHighlight;
-- (void)makeButtonNormal;
-
 @end
 
 NS_ASSUME_NONNULL_END

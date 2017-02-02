@@ -36,12 +36,6 @@
         [self.tagView addTag:[self buildTag:obj]];
     }];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuWillShow) name:UIMenuControllerWillShowMenuNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuWillHide) name:UIMenuControllerWillHideMenuNotification object:nil];
-}
-
-- (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)viewAddSubviews {
@@ -68,17 +62,6 @@
 - (void)deleteTag:(NSInteger)index {
     // NSLog(@"you have deleted the indexth tag");
 }
-
-#pragma mark - menu action
-
-- (void)menuWillShow {
-    [self.tagView makeButtonHighlight];
-}
-
-- (void)menuWillHide {
-    [self.tagView makeButtonNormal];
-}
-
 
 
 #pragma mark - getter

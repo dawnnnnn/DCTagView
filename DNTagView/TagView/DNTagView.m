@@ -17,6 +17,7 @@
 @property (nonatomic, assign) BOOL didSetup;
 
 @property (nonatomic, strong) DNTagButton *tmpButton;
+@property (nonatomic, strong) DNTagButton *lastButton;
 @property (nonatomic, assign) NSInteger viewIndex, tagIndex;
 
 @end
@@ -163,14 +164,14 @@
 #pragma mark - IBActions
 
 - (void)onTag:(DNTagButton *)btn {
-    //    if (self.didTapTagAtIndex) {
-    //        self.didTapTagAtIndex([self.subviews indexOfObject: btn]);
-    //    }
-    //    [self removeTagAtIndex:[self.subviews indexOfObject:btn]];
     
     self.tmpButton.selected = NO;
-    [self.tmpButton setBackgroundColor:[UIColor dn_colorWithHexString:@"0x017E66" alpha:0.08]];
+    [self.tmpButton setBackgroundColor:self.tmpButton.mtag.bgColor];
     self.tmpButton = btn;
+    
+    btn.selected = YES;
+    [btn setBackgroundColor:self.tmpButton.mtag.highlightedBgColor];
+    
     self.viewIndex = [self.subviews indexOfObject:btn];
     self.tagIndex = [self.tags indexOfObject:btn.mtag.text];
     
@@ -273,19 +274,9 @@
     [self invalidateIntrinsicContentSize];
 }
 
-#pragma mark - tag action
-
-- (void)makeButtonHighlight {
-    self.tmpButton.selected = YES;
-    [self.tmpButton setBackgroundColor:self.tmpButton.mtag.highlightedBgColor];
-}
-
-- (void)makeButtonNormal {
+- (void)willInput {
     self.tmpButton.selected = NO;
     [self.tmpButton setBackgroundColor:self.tmpButton.mtag.bgColor];
-}
-
-- (void)willInput {
     [self.inputText becomeFirstResponder];
 }
 
@@ -313,7 +304,7 @@
 #pragma mark - getter
 
 - (NSMutableArray *)tags {
-    if(!_tags) {
+    if(_tags == nil) {
         _tags = [NSMutableArray array];
     }
     return _tags;
