@@ -18,6 +18,7 @@ static CGFloat const kDefaultFontSize = 14.0;
         _fontSize = kDefaultFontSize;
         _textColor = [UIColor blackColor];
         _bgColor = [UIColor whiteColor];
+        _highlightedBgColor = [UIColor lightGrayColor];
         _enable = YES;
     }
     return self;

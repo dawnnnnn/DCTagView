@@ -11,6 +11,8 @@
 
 @interface DNTagView ()<UITextFieldDelegate>
 
+@property (nonatomic, assign) DNTagViewState state;
+
 @property (nonatomic, strong) NSMutableArray *tags;
 @property (nonatomic, assign) BOOL didSetup;
 
@@ -103,23 +105,6 @@
     [self layoutTags];
 }
 
-#pragma mark - Custom accessors
-
-- (NSMutableArray *)tags {
-    if(!_tags) {
-        _tags = [NSMutableArray array];
-    }
-    return _tags;
-}
-
-- (void)setPreferredMaxLayoutWidth: (CGFloat)preferredMaxLayoutWidth {
-    if (preferredMaxLayoutWidth != _preferredMaxLayoutWidth) {
-        _preferredMaxLayoutWidth = preferredMaxLayoutWidth;
-        _didSetup = NO;
-        [self invalidateIntrinsicContentSize];
-    }
-}
-
 #pragma mark - Private
 
 - (void)layoutTags {
@@ -200,6 +185,7 @@
     
     NSAssert([self becomeFirstResponder], @"Sorry, UIMenuController will not work with %@ since it cannot become first responder", self);
     [menu setMenuVisible:YES animated:YES];
+    
 }
 
 - (BOOL)canBecomeFirstResponder {
@@ -287,37 +273,29 @@
     [self invalidateIntrinsicContentSize];
 }
 
+#pragma mark - tag action
+
 - (void)makeButtonHighlight {
     self.tmpButton.selected = YES;
-    [self.tmpButton setBackgroundColor:[UIColor dn_colorWithHexString:@"#009A61"]];
+    [self.tmpButton setBackgroundColor:self.tmpButton.mtag.highlightedBgColor];
 }
 
 - (void)makeButtonNormal {
     self.tmpButton.selected = NO;
-    [self.tmpButton setBackgroundColor:[UIColor dn_colorWithHexString:@"#017E66" alpha:0.08]];
+    [self.tmpButton setBackgroundColor:self.tmpButton.mtag.bgColor];
 }
 
 - (void)willInput {
     [self.inputText becomeFirstResponder];
 }
 
-#pragma mark - textfiel delegate
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    if (textField.text) {
-        DNTag *tag = [DNTag tagWithText:textField.text];
-        tag.textColor = [UIColor dn_colorWithHexString:@"#009A61"];
-        tag.fontSize = 15;
-        tag.padding = UIEdgeInsetsMake(5, 5, 5, 5);
-        tag.bgColor = [UIColor dn_colorWithHexString:@"#017E66" alpha:0.08];
-        tag.cornerRadius = 3;
-        [self addTag:tag];
-        self.inputText.text = @"";
-    }
-    return YES;
-}
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    
+#pragma mark - textfield delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(completeInputText:)] && textField.text) {
+        [self.delegate completeInputText:textField.text];
+    }
     return YES;
 }
 
@@ -333,15 +311,31 @@
 
 
 #pragma mark - getter
+
+- (NSMutableArray *)tags {
+    if(!_tags) {
+        _tags = [NSMutableArray array];
+    }
+    return _tags;
+}
+
+- (void)setPreferredMaxLayoutWidth: (CGFloat)preferredMaxLayoutWidth {
+    if (preferredMaxLayoutWidth != _preferredMaxLayoutWidth) {
+        _preferredMaxLayoutWidth = preferredMaxLayoutWidth;
+        _didSetup = NO;
+        [self invalidateIntrinsicContentSize];
+    }
+}
+
 - (DNTextField *)inputText {
-    if (!_inputText) {
-        DNTextField *textField = [DNTextField new];
-        textField.textColor = [UIColor blackColor];
-        textField.font = [UIFont systemFontOfSize:15];
-        textField.placeholder = @"输入标签";
-        textField.delegate = self;
-        [textField addTarget:self action:@selector(textFieldDidChanged:) forControlEvents:UIControlEventEditingChanged];
-        _inputText = textField;
+    if (_inputText == nil) {
+        _inputText = [DNTextField new];
+        _inputText.textColor = [UIColor blackColor];
+        _inputText.font = [UIFont systemFontOfSize:15];
+        _inputText.placeholder = @"输入标签";
+        _inputText.returnKeyType = UIReturnKeyDone;
+        _inputText.delegate = self;
+        [_inputText addTarget:self action:@selector(textFieldDidChanged:) forControlEvents:UIControlEventEditingChanged];
     }
     return _inputText;
 }

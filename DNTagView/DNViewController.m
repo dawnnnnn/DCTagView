@@ -35,6 +35,13 @@
     [self.dataArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [self.tagView addTag:[self buildTag:obj]];
     }];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuWillShow) name:UIMenuControllerWillShowMenuNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuWillHide) name:UIMenuControllerWillHideMenuNotification object:nil];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)viewAddSubviews {
@@ -48,8 +55,29 @@
     }];
 }
 
+#pragma mark - DNTagViewDelegate
 
+- (void)didInputText:(NSString *)text {
+    // NSLog(@"you input %@", text);
+}
 
+- (void)completeInputText:(NSString *)text {
+    [self.tagView addTag:[self buildTag:text]];
+}
+
+- (void)deleteTag:(NSInteger)index {
+    // NSLog(@"you have deleted the indexth tag");
+}
+
+#pragma mark - menu action
+
+- (void)menuWillShow {
+    [self.tagView makeButtonHighlight];
+}
+
+- (void)menuWillHide {
+    [self.tagView makeButtonNormal];
+}
 
 
 
@@ -62,7 +90,6 @@
         _tagView.interitemSpacing = 10;
         _tagView.lineSpacing = 10;
         _tagView.delegate = self;
-//        [_tagView.inputText becomeFirstResponder];
     }
     return _tagView;
 }

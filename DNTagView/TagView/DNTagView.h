@@ -21,14 +21,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol DNTagViewDelegate <NSObject>
 
+@optional
 - (void)didInputText:(NSString *)text;
+- (void)completeInputText:(NSString *)text;
 - (void)deleteTag:(NSInteger)index;
 
 @end
 
 @interface DNTagView : UIView
 
-@property (nonatomic, assign) DNTagViewState state;
 @property (nonatomic, assign) UIEdgeInsets padding;
 @property (nonatomic, assign) CGFloat lineSpacing;
 @property (nonatomic, assign) CGFloat interitemSpacing;
