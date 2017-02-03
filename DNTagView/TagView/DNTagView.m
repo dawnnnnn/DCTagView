@@ -32,6 +32,7 @@
     self = [super init];
     if (self) {
         self.state = state;
+        self.menuEnable = YES;
         if (self.state == DNTagViewStateEdit) {
             [self addSubview:self.inputText];
             UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(willInput)];
@@ -45,10 +46,7 @@
 #pragma mark - Lifecycle
 
 - (CGSize)intrinsicContentSize {
-    //    if (!self.tags.count) {
-    //        return CGSizeMake(375, 45);
-    //    }
-    
+
     NSArray *subviews = self.subviews;
     UIView *previousView = nil;
     CGFloat topPadding = self.padding.top;
@@ -110,9 +108,6 @@
 #pragma mark - Private
 
 - (void)layoutTags {
-    //    if (self.didSetup || !self.tags.count) {
-    //        return;
-    //    }
     if (self.state == DNTagViewStateEdit) {
         [self bringSubviewToFront:self.inputText];
     }

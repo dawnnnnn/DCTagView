@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     self.title = @"Tags Demo";
-    self.dataArray = @[@"Singe line", @"Multiple lines Show", @"Multiple lines Edit"].copy;
+    self.dataArray = @[@"Multiple lines Show", @"Multiple lines Edit"].copy;
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"tagIdentifier"];
     self.tableView.rowHeight = 44.f;
@@ -51,11 +51,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-//    DNMultiLineEditViewController *controller = [DNMultiLineEditViewController new];
-//    [self.navigationController pushViewController:controller animated:YES];
-    
-    DNMultiLineShowViewController *controller = [DNMultiLineShowViewController new];
-    [self.navigationController pushViewController:controller animated:YES];
+    switch (indexPath.row) {
+        case 0: {
+            DNMultiLineShowViewController *controller = [DNMultiLineShowViewController new];
+            [self.navigationController pushViewController:controller animated:YES];
+        } break;
+        case 1: {
+            DNMultiLineEditViewController *controller = [DNMultiLineEditViewController new];
+            [self.navigationController pushViewController:controller animated:YES];
+        } break;
+        default:
+            break;
+    }
 }
 
 
