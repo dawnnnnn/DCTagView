@@ -25,6 +25,7 @@
 		F462F25C1D78320700CB8899 /* DNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F25B1D78320700CB8899 /* DNTextField.m */; };
 		F462F2601D78424000CB8899 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F25F1D78424000CB8899 /* UIColor+Helper.m */; };
 		F4CA31431DB21353003020BD /* DNMultiLineEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CA31421DB21353003020BD /* DNMultiLineEditViewController.m */; };
+		F4D25AD81E44BF50007A642E /* DNMultiLineShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D25AD71E44BF50007A642E /* DNMultiLineShowViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		F462F25F1D78424000CB8899 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helper.m"; path = "Categories/UIColor+Helper.m"; sourceTree = "<group>"; };
 		F4CA31411DB21353003020BD /* DNMultiLineEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMultiLineEditViewController.h; sourceTree = "<group>"; };
 		F4CA31421DB21353003020BD /* DNMultiLineEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMultiLineEditViewController.m; sourceTree = "<group>"; };
+		F4D25AD61E44BF50007A642E /* DNMultiLineShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMultiLineShowViewController.h; sourceTree = "<group>"; };
+		F4D25AD71E44BF50007A642E /* DNMultiLineShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMultiLineShowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				F425BF341DB121990052E4F4 /* DNTableViewController.m */,
 				F4CA31411DB21353003020BD /* DNMultiLineEditViewController.h */,
 				F4CA31421DB21353003020BD /* DNMultiLineEditViewController.m */,
+				F4D25AD61E44BF50007A642E /* DNMultiLineShowViewController.h */,
+				F4D25AD71E44BF50007A642E /* DNMultiLineShowViewController.m */,
 			);
 			path = DNTagView;
 			sourceTree = "<group>";
@@ -513,6 +518,7 @@
 				F462F2251D78286400CB8899 /* ViewController.m in Sources */,
 				F4CA31431DB21353003020BD /* DNMultiLineEditViewController.m in Sources */,
 				F462F2601D78424000CB8899 /* UIColor+Helper.m in Sources */,
+				F4D25AD81E44BF50007A642E /* DNMultiLineShowViewController.m in Sources */,
 				F462F2221D78286400CB8899 /* AppDelegate.m in Sources */,
 				F425BF351DB121990052E4F4 /* DNTableViewController.m in Sources */,
 				F462F21F1D78286400CB8899 /* main.m in Sources */,

@@ -7,7 +7,8 @@
 //
 
 #import "DNTableViewController.h"
-#import "DNMultipleEditViewController.h"
+#import "DNMultiLineEditViewController.h"
+#import "DNMultiLineShowViewController.h"
 
 @interface DNTableViewController ()
 
@@ -50,7 +51,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    DNMultipleEditViewController *controller = [DNMultipleEditViewController new];
+//    DNMultiLineEditViewController *controller = [DNMultiLineEditViewController new];
+//    [self.navigationController pushViewController:controller animated:YES];
+    
+    DNMultiLineShowViewController *controller = [DNMultiLineShowViewController new];
     [self.navigationController pushViewController:controller animated:YES];
 }
 
