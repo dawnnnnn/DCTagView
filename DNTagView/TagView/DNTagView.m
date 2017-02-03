@@ -12,12 +12,13 @@
 @interface DNTagView ()<UITextFieldDelegate>
 
 @property (nonatomic, assign) DNTagViewState state;
-
 @property (nonatomic, strong) NSMutableArray *tags;
-@property (nonatomic, assign) BOOL didSetup;
 
 @property (nonatomic, strong) DNTagButton *tmpButton;
 @property (nonatomic, strong) DNTagButton *lastButton;
+@property (nonatomic, strong) UIMenuController *menu;
+
+@property (nonatomic, assign) BOOL didSetup;
 @property (nonatomic, assign) NSInteger viewIndex, tagIndex;
 
 @end
@@ -178,14 +179,10 @@
     CGRect buttonFrame = btn.frame;
     [self.inputText resignFirstResponder];
     [self becomeFirstResponder];
-    UIMenuItem *deleteItem = [[UIMenuItem alloc] initWithTitle:@"删除"action:@selector(menuDelete:)];
-    UIMenuController *menu = [UIMenuController sharedMenuController];
-    menu.arrowDirection = UIMenuControllerArrowDefault;
-    [menu setMenuItems:[NSArray arrayWithObject:deleteItem]];
-    [menu setTargetRect:buttonFrame inView:self];
     
+    [self.menu setTargetRect:buttonFrame inView:self];
     NSAssert([self becomeFirstResponder], @"Sorry, UIMenuController will not work with %@ since it cannot become first responder", self);
-    [menu setMenuVisible:YES animated:YES];
+    [self.menu setMenuVisible:YES animated:YES];
     
 }
 
@@ -275,13 +272,18 @@
 }
 
 - (void)willInput {
-    self.tmpButton.selected = NO;
-    [self.tmpButton setBackgroundColor:self.tmpButton.mtag.bgColor];
     [self.inputText becomeFirstResponder];
 }
 
 
 #pragma mark - textfield delegate
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    self.tmpButton.selected = NO;
+    [self.tmpButton setBackgroundColor:self.tmpButton.mtag.bgColor];
+    [self.menu setMenuVisible:NO animated:YES];
+    return YES;
+}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if (self.delegate && [self.delegate respondsToSelector:@selector(completeInputText:)] && textField.text) {
@@ -329,6 +331,16 @@
         [_inputText addTarget:self action:@selector(textFieldDidChanged:) forControlEvents:UIControlEventEditingChanged];
     }
     return _inputText;
+}
+
+- (UIMenuController *)menu {
+    if (_menu == nil) {
+        UIMenuItem *deleteItem = [[UIMenuItem alloc] initWithTitle:@"删除"action:@selector(menuDelete:)];
+        _menu = [UIMenuController sharedMenuController];
+        _menu.arrowDirection = UIMenuControllerArrowDefault;
+        [_menu setMenuItems:[NSArray arrayWithObject:deleteItem]];
+    }
+    return _menu;
 }
 
 @end
