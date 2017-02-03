@@ -23,8 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 - (void)didInputText:(NSString *)text;
-- (void)completeInputText:(NSString *)text;
 - (void)deleteTag:(NSInteger)index;
+
+@required
+- (void)completeInputText:(NSString *)text;
 
 @end
 
@@ -35,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat interitemSpacing;
 @property (nonatomic, assign) CGFloat preferredMaxLayoutWidth;
 @property (nonatomic, assign) BOOL singleLine;
+@property (nonatomic, assign) BOOL menuEnable;  /// default = YES;
 
 //@property (copy, nonatomic, nullable) void (^didTapTagAtIndex)(NSUInteger index);
 @property (nonatomic, strong, readonly) NSMutableArray *tags;

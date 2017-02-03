@@ -13,12 +13,17 @@
 #import "UIColor+Helper.h"
 #import <Masonry.h>
 
+static CGFloat kCommonButtonHeight  = 40.f;
+static CGFloat kCommonPaddingLRTB   = 15.f;
+
 @interface DNMultiLineShowViewController ()
 
 @property (nonatomic, strong) DNTagView *tagView;
 @property (nonatomic, strong) UIButton *addTagButton;
 @property (nonatomic, strong) UIButton *insertTagButton;
 @property (nonatomic, strong) UIButton *deleteTagButton;
+@property (nonatomic, strong) UILabel *menuEnableTips;
+@property (nonatomic, strong) UISwitch *menuEnableSwitch;
 
 @property (nonatomic, strong) NSArray *dataArray;
 
@@ -46,6 +51,8 @@
     [self.view addSubview:self.addTagButton];
     [self.view addSubview:self.insertTagButton];
     [self.view addSubview:self.deleteTagButton];
+    [self.view addSubview:self.menuEnableTips];
+    [self.view addSubview:self.menuEnableSwitch];
 }
 
 - (void)viewLayoutSubviews {
@@ -55,36 +62,51 @@
     }];
     
     [self.addTagButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.tagView.mas_bottom).with.offset(30);
+        make.top.equalTo(self.tagView.mas_bottom).with.offset(kCommonPaddingLRTB*2);
         make.left.and.right.equalTo(self.view);
-        make.height.mas_equalTo(40);
+        make.height.mas_equalTo(kCommonButtonHeight);
     }];
     
     [self.insertTagButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.addTagButton.mas_bottom).with.offset(15);
+        make.top.equalTo(self.addTagButton.mas_bottom).with.offset(kCommonPaddingLRTB);
         make.left.and.right.equalTo(self.view);
-        make.height.mas_equalTo(40);
+        make.height.mas_equalTo(kCommonButtonHeight);
     }];
     
     [self.deleteTagButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.insertTagButton.mas_bottom).with.offset(15);
+        make.top.equalTo(self.insertTagButton.mas_bottom).with.offset(kCommonPaddingLRTB);
         make.left.and.right.equalTo(self.view);
-        make.height.mas_equalTo(40);
+        make.height.mas_equalTo(kCommonButtonHeight);
+    }];
+    
+    [self.menuEnableTips mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.deleteTagButton.mas_bottom).with.offset(kCommonPaddingLRTB);
+        make.left.and.right.equalTo(self.view);
+        make.height.mas_equalTo(kCommonButtonHeight);
+    }];
+    
+    [self.menuEnableSwitch mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.menuEnableTips.mas_centerY);
+        make.right.equalTo(self.view.mas_right).with.offset(-kCommonPaddingLRTB);
     }];
 }
 
 #pragma mark - action
 
 - (void)addTagButtonClicked:(UIButton *)button {
-    
+    [self.tagView addTag:[self buildTag:@"new tag"]];
 }
 
 - (void)insertTagButtonClicked:(UIButton *)button {
-    
+    [self.tagView insertTag:[self buildTag:@"insert tag"] atIndex:0];
 }
 
 - (void)deleteTagButtonClicked:(UIButton *)button {
-    
+    [self.tagView removeAllTags];
+}
+
+- (void)switchAction:(UISwitch *)menuSwitch {
+    self.tagView.menuEnable = menuSwitch.isOn;
 }
 
 #pragma mark - getter
@@ -128,6 +150,24 @@
         [_deleteTagButton addTarget:self action:@selector(deleteTagButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _deleteTagButton;
+}
+
+- (UILabel *)menuEnableTips {
+    if (_menuEnableTips == nil) {
+        _menuEnableTips = [UILabel new];
+        _menuEnableTips.text = @"menu enabled";
+        _menuEnableTips.backgroundColor = [UIColor dn_colorWithHexString:@"0x9370DB" alpha:0.4];
+    }
+    return _menuEnableTips;
+}
+
+- (UISwitch *)menuEnableSwitch {
+    if (_menuEnableSwitch == nil) {
+        _menuEnableSwitch = [UISwitch new];
+        [_menuEnableSwitch setOn:YES];
+        [_menuEnableSwitch addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
+    }
+    return _menuEnableSwitch;
 }
 
 - (DNTag *)buildTag:(NSString *)tagName {

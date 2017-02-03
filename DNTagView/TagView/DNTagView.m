@@ -165,7 +165,9 @@
 #pragma mark - IBActions
 
 - (void)onTag:(DNTagButton *)btn {
-    
+    if (!self.menuEnable) {
+        return;
+    }
     self.tmpButton.selected = NO;
     [self.tmpButton setBackgroundColor:self.tmpButton.mtag.bgColor];
     self.tmpButton = btn;
@@ -202,13 +204,10 @@
 
 - (void)addTag: (DNTag *)tag {
     NSParameterAssert(tag);
-    DNTagButton *btn = [DNTagButton buttonWithTag: tag];
-    if (self.state == DNTagViewStateEdit) {
-        [btn addTarget: self action: @selector(onTag:) forControlEvents: UIControlEventTouchUpInside];
-        self.inputText.text = @"";
-    }
-    [self addSubview: btn];
-    [self.tags addObject: tag.text];
+    DNTagButton *btn = [DNTagButton buttonWithTag:tag];
+    [btn addTarget:self action: @selector(onTag:) forControlEvents: UIControlEventTouchUpInside];
+    [self addSubview:btn];
+    [self.tags addObject:tag.text];
     
     self.didSetup = NO;
     [self invalidateIntrinsicContentSize];
@@ -288,6 +287,7 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if (self.delegate && [self.delegate respondsToSelector:@selector(completeInputText:)]) {
         [self.delegate completeInputText:textField.text];
+        textField.text = @"";
     }
     return YES;
 }
