@@ -1,5 +1,5 @@
 //
-//  DNViewController.h
+//  DNMultipleEditViewController.h
 //  DNTagView
 //
 //  Created by dawnnnnn on 2016/10/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DNViewController : UIViewController
+@interface DNMultipleEditViewController : UIViewController
 
 
 

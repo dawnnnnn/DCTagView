@@ -24,7 +24,7 @@
 		F462F2591D7831F100CB8899 /* DNTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2581D7831F100CB8899 /* DNTagButton.m */; };
 		F462F25C1D78320700CB8899 /* DNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F25B1D78320700CB8899 /* DNTextField.m */; };
 		F462F2601D78424000CB8899 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F25F1D78424000CB8899 /* UIColor+Helper.m */; };
-		F4CA31431DB21353003020BD /* DNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CA31421DB21353003020BD /* DNViewController.m */; };
+		F4CA31431DB21353003020BD /* DNMultipleEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CA31421DB21353003020BD /* DNMultipleEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +82,8 @@
 		F462F25B1D78320700CB8899 /* DNTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTextField.m; path = TagView/DNTextField.m; sourceTree = "<group>"; };
 		F462F25E1D78424000CB8899 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helper.h"; path = "Categories/UIColor+Helper.h"; sourceTree = "<group>"; };
 		F462F25F1D78424000CB8899 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helper.m"; path = "Categories/UIColor+Helper.m"; sourceTree = "<group>"; };
-		F4CA31411DB21353003020BD /* DNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNViewController.h; sourceTree = "<group>"; };
-		F4CA31421DB21353003020BD /* DNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNViewController.m; sourceTree = "<group>"; };
+		F4CA31411DB21353003020BD /* DNMultipleEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMultipleEditViewController.h; sourceTree = "<group>"; };
+		F4CA31421DB21353003020BD /* DNMultipleEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMultipleEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,8 +165,8 @@
 				F462F21D1D78286400CB8899 /* Supporting Files */,
 				F425BF331DB121990052E4F4 /* DNTableViewController.h */,
 				F425BF341DB121990052E4F4 /* DNTableViewController.m */,
-				F4CA31411DB21353003020BD /* DNViewController.h */,
-				F4CA31421DB21353003020BD /* DNViewController.m */,
+				F4CA31411DB21353003020BD /* DNMultipleEditViewController.h */,
+				F4CA31421DB21353003020BD /* DNMultipleEditViewController.m */,
 			);
 			path = DNTagView;
 			sourceTree = "<group>";
@@ -511,7 +511,7 @@
 				F462F2531D7831A200CB8899 /* DNTagView.m in Sources */,
 				F462F2561D7831D600CB8899 /* DNTag.m in Sources */,
 				F462F2251D78286400CB8899 /* ViewController.m in Sources */,
-				F4CA31431DB21353003020BD /* DNViewController.m in Sources */,
+				F4CA31431DB21353003020BD /* DNMultipleEditViewController.m in Sources */,
 				F462F2601D78424000CB8899 /* UIColor+Helper.m in Sources */,
 				F462F2221D78286400CB8899 /* AppDelegate.m in Sources */,
 				F425BF351DB121990052E4F4 /* DNTableViewController.m in Sources */,

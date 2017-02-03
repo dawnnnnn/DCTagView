@@ -286,7 +286,7 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(completeInputText:)] && textField.text) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(completeInputText:)]) {
         [self.delegate completeInputText:textField.text];
     }
     return YES;
@@ -327,6 +327,7 @@
         _inputText.font = [UIFont systemFontOfSize:15];
         _inputText.placeholder = @"输入标签";
         _inputText.returnKeyType = UIReturnKeyDone;
+        _inputText.enablesReturnKeyAutomatically = YES;
         _inputText.delegate = self;
         [_inputText addTarget:self action:@selector(textFieldDidChanged:) forControlEvents:UIControlEventEditingChanged];
     }

@@ -1,19 +1,19 @@
 //
-//  DNViewController.m
+//  DNMultipleEditViewController.m
 //  DNTagView
 //
 //  Created by dawnnnnn on 2016/10/15.
 //  Copyright © 2016年 dawnnnnn. All rights reserved.
 //
 
-#import "DNViewController.h"
+#import "DNMultipleEditViewController.h"
 
 #import "DNTagView.h"
 
 #import "UIColor+Helper.h"
 #import <Masonry.h>
 
-@interface DNViewController ()<DNTagViewDelegate>
+@interface DNMultipleEditViewController ()<DNTagViewDelegate>
 
 @property (nonatomic, strong) DNTagView *tagView;
 
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation DNViewController
+@implementation DNMultipleEditViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
