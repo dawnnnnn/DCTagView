@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.window = [[UIWindow alloc]init];
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];;
     
     DNTableViewController *controller = [DNTableViewController new];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:controller];

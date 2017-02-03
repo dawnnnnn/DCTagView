@@ -160,9 +160,7 @@
 #pragma mark - IBActions
 
 - (void)onTag:(DNTagButton *)btn {
-    if (!self.menuEnable) {
-        return;
-    }
+    
     self.tmpButton.selected = NO;
     [self.tmpButton setBackgroundColor:self.tmpButton.mtag.bgColor];
     self.tmpButton = btn;
@@ -177,6 +175,9 @@
     [self.inputText resignFirstResponder];
     [self becomeFirstResponder];
     
+    if (!self.menuEnable) {
+        return;
+    }
     [self.menu setTargetRect:buttonFrame inView:self];
     NSAssert([self becomeFirstResponder], @"Sorry, UIMenuController will not work with %@ since it cannot become first responder", self);
     [self.menu setMenuVisible:YES animated:YES];
