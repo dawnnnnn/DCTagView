@@ -7,7 +7,6 @@
 //
 
 #import "DNTagView.h"
-#import "UIColor+Helper.h"
 
 @interface DNTagView ()<UITextFieldDelegate>
 
