@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DNTagView"
-  s.version      = "1.0.0-beta"
+  s.version      = "1.0.0"
   s.summary      = "DNTagView is a view supports to display tags."
   s.description  = <<-DESC
                       DNTagView is a view supports to display tags with auto layout.
