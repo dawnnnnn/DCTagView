@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DNTagView"
-  s.version      = "1.0.0"
+  s.version      = "0.0.1"
   s.summary      = "DNTagView is a view supports to display tags."
   s.description  = <<-DESC
                       DNTagView is a view supports to display tags with auto layout.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/dawnnnnn/DNTagView.git", :tag => "#{s.version}" }
 
-  s.source_files  = "DNTagViewDemo/DNTagView/TagView/*"
+  s.source_files  = "DNTagViewDemo/TagView/*"
 
   # s.dependency "Masonry", "~> 1.0.2"
   s.framework  = "UIKit", "Foundation"

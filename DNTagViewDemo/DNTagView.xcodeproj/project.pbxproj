@@ -19,11 +19,11 @@
 		F462F22D1D78286400CB8899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F462F22B1D78286400CB8899 /* LaunchScreen.storyboard */; };
 		F462F2381D78286400CB8899 /* DNTagViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2371D78286400CB8899 /* DNTagViewTests.m */; };
 		F462F2431D78286400CB8899 /* DNTagViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2421D78286400CB8899 /* DNTagViewUITests.m */; };
-		F462F2531D7831A200CB8899 /* DNTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2521D7831A200CB8899 /* DNTagView.m */; };
-		F462F2561D7831D600CB8899 /* DNTag.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2551D7831D600CB8899 /* DNTag.m */; };
-		F462F2591D7831F100CB8899 /* DNTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2581D7831F100CB8899 /* DNTagButton.m */; };
-		F462F25C1D78320700CB8899 /* DNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F25B1D78320700CB8899 /* DNTextField.m */; };
-		F462F2601D78424000CB8899 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F25F1D78424000CB8899 /* UIColor+Helper.m */; };
+		F4B670CD1E66AB280067D298 /* DNTag.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B670C61E66AB280067D298 /* DNTag.m */; };
+		F4B670CE1E66AB280067D298 /* DNTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B670C81E66AB280067D298 /* DNTagButton.m */; };
+		F4B670CF1E66AB280067D298 /* DNTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B670CA1E66AB280067D298 /* DNTagView.m */; };
+		F4B670D01E66AB280067D298 /* DNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B670CC1E66AB280067D298 /* DNTextField.m */; };
+		F4B670D31E66ABB60067D298 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B670D21E66ABB60067D298 /* UIColor+Helper.m */; };
 		F4CA31431DB21353003020BD /* DNMultiLineEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CA31421DB21353003020BD /* DNMultiLineEditViewController.m */; };
 		F4D25AD81E44BF50007A642E /* DNMultiLineShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D25AD71E44BF50007A642E /* DNMultiLineShowViewController.m */; };
 /* End PBXBuildFile section */
@@ -73,16 +73,16 @@
 		F462F23E1D78286400CB8899 /* DNTagViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNTagViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F462F2421D78286400CB8899 /* DNTagViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTagViewUITests.m; sourceTree = "<group>"; };
 		F462F2441D78286400CB8899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F462F2511D7831A200CB8899 /* DNTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTagView.h; path = TagView/DNTagView.h; sourceTree = "<group>"; };
-		F462F2521D7831A200CB8899 /* DNTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTagView.m; path = TagView/DNTagView.m; sourceTree = "<group>"; };
-		F462F2541D7831D600CB8899 /* DNTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTag.h; path = TagView/DNTag.h; sourceTree = "<group>"; };
-		F462F2551D7831D600CB8899 /* DNTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTag.m; path = TagView/DNTag.m; sourceTree = "<group>"; };
-		F462F2571D7831F100CB8899 /* DNTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTagButton.h; path = TagView/DNTagButton.h; sourceTree = "<group>"; };
-		F462F2581D7831F100CB8899 /* DNTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTagButton.m; path = TagView/DNTagButton.m; sourceTree = "<group>"; };
-		F462F25A1D78320700CB8899 /* DNTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTextField.h; path = TagView/DNTextField.h; sourceTree = "<group>"; };
-		F462F25B1D78320700CB8899 /* DNTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTextField.m; path = TagView/DNTextField.m; sourceTree = "<group>"; };
-		F462F25E1D78424000CB8899 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helper.h"; path = "Categories/UIColor+Helper.h"; sourceTree = "<group>"; };
-		F462F25F1D78424000CB8899 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helper.m"; path = "Categories/UIColor+Helper.m"; sourceTree = "<group>"; };
+		F4B670C51E66AB280067D298 /* DNTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTag.h; sourceTree = "<group>"; };
+		F4B670C61E66AB280067D298 /* DNTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTag.m; sourceTree = "<group>"; };
+		F4B670C71E66AB280067D298 /* DNTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTagButton.h; sourceTree = "<group>"; };
+		F4B670C81E66AB280067D298 /* DNTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTagButton.m; sourceTree = "<group>"; };
+		F4B670C91E66AB280067D298 /* DNTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTagView.h; sourceTree = "<group>"; };
+		F4B670CA1E66AB280067D298 /* DNTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTagView.m; sourceTree = "<group>"; };
+		F4B670CB1E66AB280067D298 /* DNTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTextField.h; sourceTree = "<group>"; };
+		F4B670CC1E66AB280067D298 /* DNTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTextField.m; sourceTree = "<group>"; };
+		F4B670D11E66ABB60067D298 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
+		F4B670D21E66ABB60067D298 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helper.m"; sourceTree = "<group>"; };
 		F4CA31411DB21353003020BD /* DNMultiLineEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMultiLineEditViewController.h; sourceTree = "<group>"; };
 		F4CA31421DB21353003020BD /* DNMultiLineEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMultiLineEditViewController.m; sourceTree = "<group>"; };
 		F4D25AD61E44BF50007A642E /* DNMultiLineShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMultiLineShowViewController.h; sourceTree = "<group>"; };
@@ -133,6 +133,7 @@
 		F462F2111D78286400CB8899 = {
 			isa = PBXGroup;
 			children = (
+				F4B670C41E66AB080067D298 /* TagView */,
 				F462F21C1D78286400CB8899 /* DNTagView */,
 				F462F2361D78286400CB8899 /* DNTagViewTests */,
 				F462F2411D78286400CB8899 /* DNTagViewUITests */,
@@ -156,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				F462F25D1D78420600CB8899 /* Categories */,
-				F462F2501D78304E00CB8899 /* TagView */,
 				F462F2201D78286400CB8899 /* AppDelegate.h */,
 				F462F2211D78286400CB8899 /* AppDelegate.m */,
 				F462F2231D78286400CB8899 /* ViewController.h */,
@@ -202,28 +202,28 @@
 			path = DNTagViewUITests;
 			sourceTree = "<group>";
 		};
-		F462F2501D78304E00CB8899 /* TagView */ = {
-			isa = PBXGroup;
-			children = (
-				F462F2511D7831A200CB8899 /* DNTagView.h */,
-				F462F2521D7831A200CB8899 /* DNTagView.m */,
-				F462F2541D7831D600CB8899 /* DNTag.h */,
-				F462F2551D7831D600CB8899 /* DNTag.m */,
-				F462F2571D7831F100CB8899 /* DNTagButton.h */,
-				F462F2581D7831F100CB8899 /* DNTagButton.m */,
-				F462F25A1D78320700CB8899 /* DNTextField.h */,
-				F462F25B1D78320700CB8899 /* DNTextField.m */,
-			);
-			name = TagView;
-			sourceTree = "<group>";
-		};
 		F462F25D1D78420600CB8899 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				F462F25E1D78424000CB8899 /* UIColor+Helper.h */,
-				F462F25F1D78424000CB8899 /* UIColor+Helper.m */,
+				F4B670D11E66ABB60067D298 /* UIColor+Helper.h */,
+				F4B670D21E66ABB60067D298 /* UIColor+Helper.m */,
 			);
-			name = Categories;
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F4B670C41E66AB080067D298 /* TagView */ = {
+			isa = PBXGroup;
+			children = (
+				F4B670C51E66AB280067D298 /* DNTag.h */,
+				F4B670C61E66AB280067D298 /* DNTag.m */,
+				F4B670C71E66AB280067D298 /* DNTagButton.h */,
+				F4B670C81E66AB280067D298 /* DNTagButton.m */,
+				F4B670C91E66AB280067D298 /* DNTagView.h */,
+				F4B670CA1E66AB280067D298 /* DNTagView.m */,
+				F4B670CB1E66AB280067D298 /* DNTextField.h */,
+				F4B670CC1E66AB280067D298 /* DNTextField.m */,
+			);
+			path = TagView;
 			sourceTree = "<group>";
 		};
 		F76C8ECE0C870F7A2E4D4BDA /* Frameworks */ = {
@@ -513,17 +513,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F462F2531D7831A200CB8899 /* DNTagView.m in Sources */,
-				F462F2561D7831D600CB8899 /* DNTag.m in Sources */,
+				F4B670D01E66AB280067D298 /* DNTextField.m in Sources */,
+				F4B670CD1E66AB280067D298 /* DNTag.m in Sources */,
+				F4B670CF1E66AB280067D298 /* DNTagView.m in Sources */,
 				F462F2251D78286400CB8899 /* ViewController.m in Sources */,
+				F4B670D31E66ABB60067D298 /* UIColor+Helper.m in Sources */,
 				F4CA31431DB21353003020BD /* DNMultiLineEditViewController.m in Sources */,
-				F462F2601D78424000CB8899 /* UIColor+Helper.m in Sources */,
+				F4B670CE1E66AB280067D298 /* DNTagButton.m in Sources */,
 				F4D25AD81E44BF50007A642E /* DNMultiLineShowViewController.m in Sources */,
 				F462F2221D78286400CB8899 /* AppDelegate.m in Sources */,
 				F425BF351DB121990052E4F4 /* DNTableViewController.m in Sources */,
 				F462F21F1D78286400CB8899 /* main.m in Sources */,
-				F462F25C1D78320700CB8899 /* DNTextField.m in Sources */,
-				F462F2591D7831F100CB8899 /* DNTagButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
