@@ -6,7 +6,7 @@ target 'DNTagView' do
   # use_frameworks!
 
   # Pods for DNTagView
-  pod 'Masonry'
+    pod 'Masonry'
 
   target 'DNTagViewTests' do
     inherit! :search_paths

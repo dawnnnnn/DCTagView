@@ -7,323 +7,334 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		96E5BCD8FEE92F75C12ECB42 /* libPods-DNTagViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74502A45CD65E5DBB2E4B441 /* libPods-DNTagViewTests.a */; };
-		CA982A59A5CC77A945738DA1 /* libPods-DNTagView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 581077F314511812A382D0A2 /* libPods-DNTagView.a */; };
-		F02375BC3A12F98E07A17AB0 /* libPods-DNTagViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBBB32C80A913662B68AF96 /* libPods-DNTagViewUITests.a */; };
-		F425BF351DB121990052E4F4 /* DNTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F425BF341DB121990052E4F4 /* DNTableViewController.m */; };
-		F462F21F1D78286400CB8899 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F21E1D78286400CB8899 /* main.m */; };
-		F462F2221D78286400CB8899 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2211D78286400CB8899 /* AppDelegate.m */; };
-		F462F2251D78286400CB8899 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2241D78286400CB8899 /* ViewController.m */; };
-		F462F2281D78286400CB8899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F462F2261D78286400CB8899 /* Main.storyboard */; };
-		F462F22A1D78286400CB8899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F462F2291D78286400CB8899 /* Assets.xcassets */; };
-		F462F22D1D78286400CB8899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F462F22B1D78286400CB8899 /* LaunchScreen.storyboard */; };
-		F462F2381D78286400CB8899 /* DNTagViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2371D78286400CB8899 /* DNTagViewTests.m */; };
-		F462F2431D78286400CB8899 /* DNTagViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F462F2421D78286400CB8899 /* DNTagViewUITests.m */; };
-		F4B670CD1E66AB280067D298 /* DNTag.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B670C61E66AB280067D298 /* DNTag.m */; };
-		F4B670CE1E66AB280067D298 /* DNTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B670C81E66AB280067D298 /* DNTagButton.m */; };
-		F4B670CF1E66AB280067D298 /* DNTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B670CA1E66AB280067D298 /* DNTagView.m */; };
-		F4B670D01E66AB280067D298 /* DNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B670CC1E66AB280067D298 /* DNTextField.m */; };
-		F4B670D31E66ABB60067D298 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B670D21E66ABB60067D298 /* UIColor+Helper.m */; };
-		F4CA31431DB21353003020BD /* DNMultiLineEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CA31421DB21353003020BD /* DNMultiLineEditViewController.m */; };
-		F4D25AD81E44BF50007A642E /* DNMultiLineShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D25AD71E44BF50007A642E /* DNMultiLineShowViewController.m */; };
+		8CDB1AA1F46392100AA5AD8A /* libPods-DNTagView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B7BF91B052C455D29CA178 /* libPods-DNTagView.a */; };
+		B9BFEA8D8237C00A105B964C /* libPods-DNTagViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8877D1B5A2EF902E580E84 /* libPods-DNTagViewUITests.a */; };
+		BDB7F381FBE1F71F8D7E05AF /* libPods-DNTagViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DA2F6C9BEBE77E70B9C6A6 /* libPods-DNTagViewTests.a */; };
+		F4E09C951E66AF8600E09061 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09C941E66AF8600E09061 /* main.m */; };
+		F4E09C981E66AF8600E09061 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09C971E66AF8600E09061 /* AppDelegate.m */; };
+		F4E09C9B1E66AF8600E09061 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09C9A1E66AF8600E09061 /* ViewController.m */; };
+		F4E09C9E1E66AF8600E09061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E09C9C1E66AF8600E09061 /* Main.storyboard */; };
+		F4E09CA01E66AF8600E09061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E09C9F1E66AF8600E09061 /* Assets.xcassets */; };
+		F4E09CA31E66AF8600E09061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E09CA11E66AF8600E09061 /* LaunchScreen.storyboard */; };
+		F4E09CAE1E66AF8600E09061 /* DNTagViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09CAD1E66AF8600E09061 /* DNTagViewTests.m */; };
+		F4E09CB91E66AF8600E09061 /* DNTagViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09CB81E66AF8600E09061 /* DNTagViewUITests.m */; };
+		F4E09CCF1E66B06200E09061 /* DNMultiLineEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09CCA1E66B06200E09061 /* DNMultiLineEditViewController.m */; };
+		F4E09CD01E66B06200E09061 /* DNMultiLineShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09CCC1E66B06200E09061 /* DNMultiLineShowViewController.m */; };
+		F4E09CD11E66B06200E09061 /* DNTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09CCE1E66B06200E09061 /* DNTableViewController.m */; };
+		F4E09CD41E66B06E00E09061 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09CD31E66B06E00E09061 /* UIColor+Helper.m */; };
+		F4E09CDD1E66B07900E09061 /* DNTag.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09CD61E66B07900E09061 /* DNTag.m */; };
+		F4E09CDE1E66B07900E09061 /* DNTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09CD81E66B07900E09061 /* DNTagButton.m */; };
+		F4E09CDF1E66B07900E09061 /* DNTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09CDA1E66B07900E09061 /* DNTagView.m */; };
+		F4E09CE01E66B07900E09061 /* DNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E09CDC1E66B07900E09061 /* DNTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F462F2341D78286400CB8899 /* PBXContainerItemProxy */ = {
+		F4E09CAA1E66AF8600E09061 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F462F2121D78286400CB8899 /* Project object */;
+			containerPortal = F4E09C881E66AF8500E09061 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F462F2191D78286400CB8899;
-			remoteInfo = DCTagView;
+			remoteGlobalIDString = F4E09C8F1E66AF8500E09061;
+			remoteInfo = DNTagView;
 		};
-		F462F23F1D78286400CB8899 /* PBXContainerItemProxy */ = {
+		F4E09CB51E66AF8600E09061 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F462F2121D78286400CB8899 /* Project object */;
+			containerPortal = F4E09C881E66AF8500E09061 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F462F2191D78286400CB8899;
-			remoteInfo = DCTagView;
+			remoteGlobalIDString = F4E09C8F1E66AF8500E09061;
+			remoteInfo = DNTagView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		260133DDE3DA15FB0B0A41D3 /* Pods-DNTagView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNTagView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNTagView/Pods-DNTagView.release.xcconfig"; sourceTree = "<group>"; };
-		581077F314511812A382D0A2 /* libPods-DNTagView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DNTagView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CBBB32C80A913662B68AF96 /* libPods-DNTagViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DNTagViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		62698369984D7EA006CEDE2F /* Pods-DNTagViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNTagViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNTagViewTests/Pods-DNTagViewTests.release.xcconfig"; sourceTree = "<group>"; };
-		68A9FA15C352987651469216 /* Pods-DNTagView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNTagView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNTagView/Pods-DNTagView.debug.xcconfig"; sourceTree = "<group>"; };
-		6D1831DAD16269A6C2AF1670 /* Pods-DNTagViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNTagViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNTagViewUITests/Pods-DNTagViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		74502A45CD65E5DBB2E4B441 /* libPods-DNTagViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DNTagViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D348F4E6FD37916435B90DD1 /* Pods-DNTagViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNTagViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNTagViewTests/Pods-DNTagViewTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DE3F6BA0DFD555B6C6AE0212 /* Pods-DNTagViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNTagViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNTagViewUITests/Pods-DNTagViewUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F425BF331DB121990052E4F4 /* DNTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTableViewController.h; sourceTree = "<group>"; };
-		F425BF341DB121990052E4F4 /* DNTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTableViewController.m; sourceTree = "<group>"; };
-		F462F21A1D78286400CB8899 /* DNTagView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNTagView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F462F21E1D78286400CB8899 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F462F2201D78286400CB8899 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F462F2211D78286400CB8899 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F462F2231D78286400CB8899 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F462F2241D78286400CB8899 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F462F2271D78286400CB8899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F462F2291D78286400CB8899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F462F22C1D78286400CB8899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F462F22E1D78286400CB8899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F462F2331D78286400CB8899 /* DNTagViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNTagViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F462F2371D78286400CB8899 /* DNTagViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTagViewTests.m; sourceTree = "<group>"; };
-		F462F2391D78286400CB8899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F462F23E1D78286400CB8899 /* DNTagViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNTagViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F462F2421D78286400CB8899 /* DNTagViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTagViewUITests.m; sourceTree = "<group>"; };
-		F462F2441D78286400CB8899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4B670C51E66AB280067D298 /* DNTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTag.h; sourceTree = "<group>"; };
-		F4B670C61E66AB280067D298 /* DNTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTag.m; sourceTree = "<group>"; };
-		F4B670C71E66AB280067D298 /* DNTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTagButton.h; sourceTree = "<group>"; };
-		F4B670C81E66AB280067D298 /* DNTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTagButton.m; sourceTree = "<group>"; };
-		F4B670C91E66AB280067D298 /* DNTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTagView.h; sourceTree = "<group>"; };
-		F4B670CA1E66AB280067D298 /* DNTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTagView.m; sourceTree = "<group>"; };
-		F4B670CB1E66AB280067D298 /* DNTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTextField.h; sourceTree = "<group>"; };
-		F4B670CC1E66AB280067D298 /* DNTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTextField.m; sourceTree = "<group>"; };
-		F4B670D11E66ABB60067D298 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
-		F4B670D21E66ABB60067D298 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helper.m"; sourceTree = "<group>"; };
-		F4CA31411DB21353003020BD /* DNMultiLineEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMultiLineEditViewController.h; sourceTree = "<group>"; };
-		F4CA31421DB21353003020BD /* DNMultiLineEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMultiLineEditViewController.m; sourceTree = "<group>"; };
-		F4D25AD61E44BF50007A642E /* DNMultiLineShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNMultiLineShowViewController.h; sourceTree = "<group>"; };
-		F4D25AD71E44BF50007A642E /* DNMultiLineShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNMultiLineShowViewController.m; sourceTree = "<group>"; };
+		15017A576D90E94175661986 /* Pods-DNTagViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNTagViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNTagViewTests/Pods-DNTagViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2ACEC153162DE26C9AD2BFBD /* Pods-DNTagViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNTagViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNTagViewTests/Pods-DNTagViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D89AC5EB7361ECD9B2BDD67 /* Pods-DNTagViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNTagViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNTagViewUITests/Pods-DNTagViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		34DA2F6C9BEBE77E70B9C6A6 /* libPods-DNTagViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DNTagViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4681F849584C55903D0A2805 /* Pods-DNTagView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNTagView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNTagView/Pods-DNTagView.release.xcconfig"; sourceTree = "<group>"; };
+		4E0EAB997ECE52A14B5E169F /* Pods-DNTagViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNTagViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNTagViewUITests/Pods-DNTagViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9287149DC40529B76DB16CE1 /* Pods-DNTagView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNTagView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNTagView/Pods-DNTagView.debug.xcconfig"; sourceTree = "<group>"; };
+		F4E09C901E66AF8500E09061 /* DNTagView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNTagView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E09C941E66AF8600E09061 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4E09C961E66AF8600E09061 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F4E09C971E66AF8600E09061 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F4E09C991E66AF8600E09061 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F4E09C9A1E66AF8600E09061 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F4E09C9D1E66AF8600E09061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4E09C9F1E66AF8600E09061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4E09CA21E66AF8600E09061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4E09CA41E66AF8600E09061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E09CA91E66AF8600E09061 /* DNTagViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNTagViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E09CAD1E66AF8600E09061 /* DNTagViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTagViewTests.m; sourceTree = "<group>"; };
+		F4E09CAF1E66AF8600E09061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E09CB41E66AF8600E09061 /* DNTagViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNTagViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E09CB81E66AF8600E09061 /* DNTagViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTagViewUITests.m; sourceTree = "<group>"; };
+		F4E09CBA1E66AF8600E09061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E09CC91E66B06200E09061 /* DNMultiLineEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNMultiLineEditViewController.h; path = Controller/DNMultiLineEditViewController.h; sourceTree = "<group>"; };
+		F4E09CCA1E66B06200E09061 /* DNMultiLineEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNMultiLineEditViewController.m; path = Controller/DNMultiLineEditViewController.m; sourceTree = "<group>"; };
+		F4E09CCB1E66B06200E09061 /* DNMultiLineShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNMultiLineShowViewController.h; path = Controller/DNMultiLineShowViewController.h; sourceTree = "<group>"; };
+		F4E09CCC1E66B06200E09061 /* DNMultiLineShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNMultiLineShowViewController.m; path = Controller/DNMultiLineShowViewController.m; sourceTree = "<group>"; };
+		F4E09CCD1E66B06200E09061 /* DNTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTableViewController.h; path = Controller/DNTableViewController.h; sourceTree = "<group>"; };
+		F4E09CCE1E66B06200E09061 /* DNTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTableViewController.m; path = Controller/DNTableViewController.m; sourceTree = "<group>"; };
+		F4E09CD21E66B06E00E09061 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helper.h"; path = "Categories/UIColor+Helper.h"; sourceTree = "<group>"; };
+		F4E09CD31E66B06E00E09061 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helper.m"; path = "Categories/UIColor+Helper.m"; sourceTree = "<group>"; };
+		F4E09CD51E66B07900E09061 /* DNTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTag.h; path = TagView/DNTag.h; sourceTree = SOURCE_ROOT; };
+		F4E09CD61E66B07900E09061 /* DNTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTag.m; path = TagView/DNTag.m; sourceTree = SOURCE_ROOT; };
+		F4E09CD71E66B07900E09061 /* DNTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTagButton.h; path = TagView/DNTagButton.h; sourceTree = SOURCE_ROOT; };
+		F4E09CD81E66B07900E09061 /* DNTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTagButton.m; path = TagView/DNTagButton.m; sourceTree = SOURCE_ROOT; };
+		F4E09CD91E66B07900E09061 /* DNTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTagView.h; path = TagView/DNTagView.h; sourceTree = SOURCE_ROOT; };
+		F4E09CDA1E66B07900E09061 /* DNTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTagView.m; path = TagView/DNTagView.m; sourceTree = SOURCE_ROOT; };
+		F4E09CDB1E66B07900E09061 /* DNTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNTextField.h; path = TagView/DNTextField.h; sourceTree = SOURCE_ROOT; };
+		F4E09CDC1E66B07900E09061 /* DNTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNTextField.m; path = TagView/DNTextField.m; sourceTree = SOURCE_ROOT; };
+		F5B7BF91B052C455D29CA178 /* libPods-DNTagView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DNTagView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD8877D1B5A2EF902E580E84 /* libPods-DNTagViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DNTagViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F462F2171D78286400CB8899 /* Frameworks */ = {
+		F4E09C8D1E66AF8500E09061 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA982A59A5CC77A945738DA1 /* libPods-DNTagView.a in Frameworks */,
+				8CDB1AA1F46392100AA5AD8A /* libPods-DNTagView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F462F2301D78286400CB8899 /* Frameworks */ = {
+		F4E09CA61E66AF8600E09061 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E5BCD8FEE92F75C12ECB42 /* libPods-DNTagViewTests.a in Frameworks */,
+				BDB7F381FBE1F71F8D7E05AF /* libPods-DNTagViewTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F462F23B1D78286400CB8899 /* Frameworks */ = {
+		F4E09CB11E66AF8600E09061 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F02375BC3A12F98E07A17AB0 /* libPods-DNTagViewUITests.a in Frameworks */,
+				B9BFEA8D8237C00A105B964C /* libPods-DNTagViewUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		775497B30A0C41AD6E481056 /* Pods */ = {
+		7238D56E68272B271EF9C7FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				68A9FA15C352987651469216 /* Pods-DNTagView.debug.xcconfig */,
-				260133DDE3DA15FB0B0A41D3 /* Pods-DNTagView.release.xcconfig */,
-				D348F4E6FD37916435B90DD1 /* Pods-DNTagViewTests.debug.xcconfig */,
-				62698369984D7EA006CEDE2F /* Pods-DNTagViewTests.release.xcconfig */,
-				6D1831DAD16269A6C2AF1670 /* Pods-DNTagViewUITests.debug.xcconfig */,
-				DE3F6BA0DFD555B6C6AE0212 /* Pods-DNTagViewUITests.release.xcconfig */,
+				9287149DC40529B76DB16CE1 /* Pods-DNTagView.debug.xcconfig */,
+				4681F849584C55903D0A2805 /* Pods-DNTagView.release.xcconfig */,
+				15017A576D90E94175661986 /* Pods-DNTagViewTests.debug.xcconfig */,
+				2ACEC153162DE26C9AD2BFBD /* Pods-DNTagViewTests.release.xcconfig */,
+				2D89AC5EB7361ECD9B2BDD67 /* Pods-DNTagViewUITests.debug.xcconfig */,
+				4E0EAB997ECE52A14B5E169F /* Pods-DNTagViewUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F462F2111D78286400CB8899 = {
+		D002C7B3B7AB207CBF241FB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F4B670C41E66AB080067D298 /* TagView */,
-				F462F21C1D78286400CB8899 /* DNTagView */,
-				F462F2361D78286400CB8899 /* DNTagViewTests */,
-				F462F2411D78286400CB8899 /* DNTagViewUITests */,
-				F462F21B1D78286400CB8899 /* Products */,
-				775497B30A0C41AD6E481056 /* Pods */,
-				F76C8ECE0C870F7A2E4D4BDA /* Frameworks */,
+				F5B7BF91B052C455D29CA178 /* libPods-DNTagView.a */,
+				34DA2F6C9BEBE77E70B9C6A6 /* libPods-DNTagViewTests.a */,
+				FD8877D1B5A2EF902E580E84 /* libPods-DNTagViewUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4E09C871E66AF8500E09061 = {
+			isa = PBXGroup;
+			children = (
+				F4E09C921E66AF8600E09061 /* DNTagView */,
+				F4E09CAC1E66AF8600E09061 /* DNTagViewTests */,
+				F4E09CB71E66AF8600E09061 /* DNTagViewUITests */,
+				F4E09C911E66AF8500E09061 /* Products */,
+				7238D56E68272B271EF9C7FA /* Pods */,
+				D002C7B3B7AB207CBF241FB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		F462F21B1D78286400CB8899 /* Products */ = {
+		F4E09C911E66AF8500E09061 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F462F21A1D78286400CB8899 /* DNTagView.app */,
-				F462F2331D78286400CB8899 /* DNTagViewTests.xctest */,
-				F462F23E1D78286400CB8899 /* DNTagViewUITests.xctest */,
+				F4E09C901E66AF8500E09061 /* DNTagView.app */,
+				F4E09CA91E66AF8600E09061 /* DNTagViewTests.xctest */,
+				F4E09CB41E66AF8600E09061 /* DNTagViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F462F21C1D78286400CB8899 /* DNTagView */ = {
+		F4E09C921E66AF8600E09061 /* DNTagView */ = {
 			isa = PBXGroup;
 			children = (
-				F462F25D1D78420600CB8899 /* Categories */,
-				F462F2201D78286400CB8899 /* AppDelegate.h */,
-				F462F2211D78286400CB8899 /* AppDelegate.m */,
-				F462F2231D78286400CB8899 /* ViewController.h */,
-				F462F2241D78286400CB8899 /* ViewController.m */,
-				F462F2261D78286400CB8899 /* Main.storyboard */,
-				F462F2291D78286400CB8899 /* Assets.xcassets */,
-				F462F22B1D78286400CB8899 /* LaunchScreen.storyboard */,
-				F462F22E1D78286400CB8899 /* Info.plist */,
-				F462F21D1D78286400CB8899 /* Supporting Files */,
-				F425BF331DB121990052E4F4 /* DNTableViewController.h */,
-				F425BF341DB121990052E4F4 /* DNTableViewController.m */,
-				F4CA31411DB21353003020BD /* DNMultiLineEditViewController.h */,
-				F4CA31421DB21353003020BD /* DNMultiLineEditViewController.m */,
-				F4D25AD61E44BF50007A642E /* DNMultiLineShowViewController.h */,
-				F4D25AD71E44BF50007A642E /* DNMultiLineShowViewController.m */,
+				F4E09CC81E66AFC800E09061 /* Controller */,
+				F4E09CC71E66AFB300E09061 /* Categories */,
+				F4E09CC61E66AF9E00E09061 /* TagView */,
+				F4E09C961E66AF8600E09061 /* AppDelegate.h */,
+				F4E09C971E66AF8600E09061 /* AppDelegate.m */,
+				F4E09C991E66AF8600E09061 /* ViewController.h */,
+				F4E09C9A1E66AF8600E09061 /* ViewController.m */,
+				F4E09C9C1E66AF8600E09061 /* Main.storyboard */,
+				F4E09C9F1E66AF8600E09061 /* Assets.xcassets */,
+				F4E09CA11E66AF8600E09061 /* LaunchScreen.storyboard */,
+				F4E09CA41E66AF8600E09061 /* Info.plist */,
+				F4E09C931E66AF8600E09061 /* Supporting Files */,
 			);
 			path = DNTagView;
 			sourceTree = "<group>";
 		};
-		F462F21D1D78286400CB8899 /* Supporting Files */ = {
+		F4E09C931E66AF8600E09061 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F462F21E1D78286400CB8899 /* main.m */,
+				F4E09C941E66AF8600E09061 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F462F2361D78286400CB8899 /* DNTagViewTests */ = {
+		F4E09CAC1E66AF8600E09061 /* DNTagViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				F462F2371D78286400CB8899 /* DNTagViewTests.m */,
-				F462F2391D78286400CB8899 /* Info.plist */,
+				F4E09CAD1E66AF8600E09061 /* DNTagViewTests.m */,
+				F4E09CAF1E66AF8600E09061 /* Info.plist */,
 			);
 			path = DNTagViewTests;
 			sourceTree = "<group>";
 		};
-		F462F2411D78286400CB8899 /* DNTagViewUITests */ = {
+		F4E09CB71E66AF8600E09061 /* DNTagViewUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F462F2421D78286400CB8899 /* DNTagViewUITests.m */,
-				F462F2441D78286400CB8899 /* Info.plist */,
+				F4E09CB81E66AF8600E09061 /* DNTagViewUITests.m */,
+				F4E09CBA1E66AF8600E09061 /* Info.plist */,
 			);
 			path = DNTagViewUITests;
 			sourceTree = "<group>";
 		};
-		F462F25D1D78420600CB8899 /* Categories */ = {
+		F4E09CC61E66AF9E00E09061 /* TagView */ = {
 			isa = PBXGroup;
 			children = (
-				F4B670D11E66ABB60067D298 /* UIColor+Helper.h */,
-				F4B670D21E66ABB60067D298 /* UIColor+Helper.m */,
+				F4E09CD51E66B07900E09061 /* DNTag.h */,
+				F4E09CD61E66B07900E09061 /* DNTag.m */,
+				F4E09CD71E66B07900E09061 /* DNTagButton.h */,
+				F4E09CD81E66B07900E09061 /* DNTagButton.m */,
+				F4E09CD91E66B07900E09061 /* DNTagView.h */,
+				F4E09CDA1E66B07900E09061 /* DNTagView.m */,
+				F4E09CDB1E66B07900E09061 /* DNTextField.h */,
+				F4E09CDC1E66B07900E09061 /* DNTextField.m */,
 			);
-			path = Categories;
+			name = TagView;
 			sourceTree = "<group>";
 		};
-		F4B670C41E66AB080067D298 /* TagView */ = {
+		F4E09CC71E66AFB300E09061 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				F4B670C51E66AB280067D298 /* DNTag.h */,
-				F4B670C61E66AB280067D298 /* DNTag.m */,
-				F4B670C71E66AB280067D298 /* DNTagButton.h */,
-				F4B670C81E66AB280067D298 /* DNTagButton.m */,
-				F4B670C91E66AB280067D298 /* DNTagView.h */,
-				F4B670CA1E66AB280067D298 /* DNTagView.m */,
-				F4B670CB1E66AB280067D298 /* DNTextField.h */,
-				F4B670CC1E66AB280067D298 /* DNTextField.m */,
+				F4E09CD21E66B06E00E09061 /* UIColor+Helper.h */,
+				F4E09CD31E66B06E00E09061 /* UIColor+Helper.m */,
 			);
-			path = TagView;
+			name = Categories;
 			sourceTree = "<group>";
 		};
-		F76C8ECE0C870F7A2E4D4BDA /* Frameworks */ = {
+		F4E09CC81E66AFC800E09061 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				581077F314511812A382D0A2 /* libPods-DNTagView.a */,
-				74502A45CD65E5DBB2E4B441 /* libPods-DNTagViewTests.a */,
-				5CBBB32C80A913662B68AF96 /* libPods-DNTagViewUITests.a */,
+				F4E09CC91E66B06200E09061 /* DNMultiLineEditViewController.h */,
+				F4E09CCA1E66B06200E09061 /* DNMultiLineEditViewController.m */,
+				F4E09CCB1E66B06200E09061 /* DNMultiLineShowViewController.h */,
+				F4E09CCC1E66B06200E09061 /* DNMultiLineShowViewController.m */,
+				F4E09CCD1E66B06200E09061 /* DNTableViewController.h */,
+				F4E09CCE1E66B06200E09061 /* DNTableViewController.m */,
 			);
-			name = Frameworks;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F462F2191D78286400CB8899 /* DNTagView */ = {
+		F4E09C8F1E66AF8500E09061 /* DNTagView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F462F2471D78286400CB8899 /* Build configuration list for PBXNativeTarget "DNTagView" */;
+			buildConfigurationList = F4E09CBD1E66AF8600E09061 /* Build configuration list for PBXNativeTarget "DNTagView" */;
 			buildPhases = (
-				EF167F8B864808D2A5949522 /* [CP] Check Pods Manifest.lock */,
-				F462F2161D78286400CB8899 /* Sources */,
-				F462F2171D78286400CB8899 /* Frameworks */,
-				F462F2181D78286400CB8899 /* Resources */,
-				973471240A947D07B5D05BB3 /* [CP] Embed Pods Frameworks */,
-				5AE2A924B85D99105FCDAF2D /* [CP] Copy Pods Resources */,
+				185B5D1CC802BC7818753DE4 /* [CP] Check Pods Manifest.lock */,
+				F4E09C8C1E66AF8500E09061 /* Sources */,
+				F4E09C8D1E66AF8500E09061 /* Frameworks */,
+				F4E09C8E1E66AF8500E09061 /* Resources */,
+				3529B900056C7AECDFEC5D44 /* [CP] Embed Pods Frameworks */,
+				368D51649B69CA07A19143C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DNTagView;
-			productName = DCTagView;
-			productReference = F462F21A1D78286400CB8899 /* DNTagView.app */;
+			productName = DNTagView;
+			productReference = F4E09C901E66AF8500E09061 /* DNTagView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F462F2321D78286400CB8899 /* DNTagViewTests */ = {
+		F4E09CA81E66AF8600E09061 /* DNTagViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F462F24A1D78286400CB8899 /* Build configuration list for PBXNativeTarget "DNTagViewTests" */;
+			buildConfigurationList = F4E09CC01E66AF8600E09061 /* Build configuration list for PBXNativeTarget "DNTagViewTests" */;
 			buildPhases = (
-				A54E3B9FBC2AE7E7D93A4687 /* [CP] Check Pods Manifest.lock */,
-				F462F22F1D78286400CB8899 /* Sources */,
-				F462F2301D78286400CB8899 /* Frameworks */,
-				F462F2311D78286400CB8899 /* Resources */,
-				9644691538975C531044EC1B /* [CP] Embed Pods Frameworks */,
-				F2F1243CF1A42E35CF360E78 /* [CP] Copy Pods Resources */,
+				2934D14EE85BC78993A2B12F /* [CP] Check Pods Manifest.lock */,
+				F4E09CA51E66AF8600E09061 /* Sources */,
+				F4E09CA61E66AF8600E09061 /* Frameworks */,
+				F4E09CA71E66AF8600E09061 /* Resources */,
+				36C4B96599CE2F63297B7FE2 /* [CP] Embed Pods Frameworks */,
+				4F40191A75FCA0C57D42654B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F462F2351D78286400CB8899 /* PBXTargetDependency */,
+				F4E09CAB1E66AF8600E09061 /* PBXTargetDependency */,
 			);
 			name = DNTagViewTests;
-			productName = DCTagViewTests;
-			productReference = F462F2331D78286400CB8899 /* DNTagViewTests.xctest */;
+			productName = DNTagViewTests;
+			productReference = F4E09CA91E66AF8600E09061 /* DNTagViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F462F23D1D78286400CB8899 /* DNTagViewUITests */ = {
+		F4E09CB31E66AF8600E09061 /* DNTagViewUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F462F24D1D78286400CB8899 /* Build configuration list for PBXNativeTarget "DNTagViewUITests" */;
+			buildConfigurationList = F4E09CC31E66AF8600E09061 /* Build configuration list for PBXNativeTarget "DNTagViewUITests" */;
 			buildPhases = (
-				F80D8FB392043AD23C0E4609 /* [CP] Check Pods Manifest.lock */,
-				F462F23A1D78286400CB8899 /* Sources */,
-				F462F23B1D78286400CB8899 /* Frameworks */,
-				F462F23C1D78286400CB8899 /* Resources */,
-				905C594B4AD4FC4385D09DFE /* [CP] Embed Pods Frameworks */,
-				D4DE79819FCC74FBB3981A8E /* [CP] Copy Pods Resources */,
+				E92F47700852DC83ACF5C4DE /* [CP] Check Pods Manifest.lock */,
+				F4E09CB01E66AF8600E09061 /* Sources */,
+				F4E09CB11E66AF8600E09061 /* Frameworks */,
+				F4E09CB21E66AF8600E09061 /* Resources */,
+				F1E6BBDD09C057318FADDBCA /* [CP] Embed Pods Frameworks */,
+				426B0442A087CB4A9B3639E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F462F2401D78286400CB8899 /* PBXTargetDependency */,
+				F4E09CB61E66AF8600E09061 /* PBXTargetDependency */,
 			);
 			name = DNTagViewUITests;
-			productName = DCTagViewUITests;
-			productReference = F462F23E1D78286400CB8899 /* DNTagViewUITests.xctest */;
+			productName = DNTagViewUITests;
+			productReference = F4E09CB41E66AF8600E09061 /* DNTagViewUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F462F2121D78286400CB8899 /* Project object */ = {
+		F4E09C881E66AF8500E09061 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = dawnnnnn;
 				TargetAttributes = {
-					F462F2191D78286400CB8899 = {
-						CreatedOnToolsVersion = 7.3.1;
+					F4E09C8F1E66AF8500E09061 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
 					};
-					F462F2321D78286400CB8899 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = F462F2191D78286400CB8899;
+					F4E09CA81E66AF8600E09061 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F4E09C8F1E66AF8500E09061;
 					};
-					F462F23D1D78286400CB8899 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = F462F2191D78286400CB8899;
+					F4E09CB31E66AF8600E09061 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F4E09C8F1E66AF8500E09061;
 					};
 				};
 			};
-			buildConfigurationList = F462F2151D78286400CB8899 /* Build configuration list for PBXProject "DNTagView" */;
+			buildConfigurationList = F4E09C8B1E66AF8500E09061 /* Build configuration list for PBXProject "DNTagView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -331,37 +342,37 @@
 				en,
 				Base,
 			);
-			mainGroup = F462F2111D78286400CB8899;
-			productRefGroup = F462F21B1D78286400CB8899 /* Products */;
+			mainGroup = F4E09C871E66AF8500E09061;
+			productRefGroup = F4E09C911E66AF8500E09061 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F462F2191D78286400CB8899 /* DNTagView */,
-				F462F2321D78286400CB8899 /* DNTagViewTests */,
-				F462F23D1D78286400CB8899 /* DNTagViewUITests */,
+				F4E09C8F1E66AF8500E09061 /* DNTagView */,
+				F4E09CA81E66AF8600E09061 /* DNTagViewTests */,
+				F4E09CB31E66AF8600E09061 /* DNTagViewUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F462F2181D78286400CB8899 /* Resources */ = {
+		F4E09C8E1E66AF8500E09061 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F462F22D1D78286400CB8899 /* LaunchScreen.storyboard in Resources */,
-				F462F22A1D78286400CB8899 /* Assets.xcassets in Resources */,
-				F462F2281D78286400CB8899 /* Main.storyboard in Resources */,
+				F4E09CA31E66AF8600E09061 /* LaunchScreen.storyboard in Resources */,
+				F4E09CA01E66AF8600E09061 /* Assets.xcassets in Resources */,
+				F4E09C9E1E66AF8600E09061 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F462F2311D78286400CB8899 /* Resources */ = {
+		F4E09CA71E66AF8600E09061 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F462F23C1D78286400CB8899 /* Resources */ = {
+		F4E09CB21E66AF8600E09061 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,52 +382,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5AE2A924B85D99105FCDAF2D /* [CP] Copy Pods Resources */ = {
+		185B5D1CC802BC7818753DE4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNTagView/Pods-DNTagView-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		905C594B4AD4FC4385D09DFE /* [CP] Embed Pods Frameworks */ = {
+		2934D14EE85BC78993A2B12F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNTagViewUITests/Pods-DNTagViewUITests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9644691538975C531044EC1B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNTagViewTests/Pods-DNTagViewTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		973471240A947D07B5D05BB3 /* [CP] Embed Pods Frameworks */ = {
+		3529B900056C7AECDFEC5D44 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -431,22 +427,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNTagView/Pods-DNTagView-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A54E3B9FBC2AE7E7D93A4687 /* [CP] Check Pods Manifest.lock */ = {
+		368D51649B69CA07A19143C0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNTagView/Pods-DNTagView-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D4DE79819FCC74FBB3981A8E /* [CP] Copy Pods Resources */ = {
+		36C4B96599CE2F63297B7FE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNTagViewTests/Pods-DNTagViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		426B0442A087CB4A9B3639E4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -461,22 +472,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNTagViewUITests/Pods-DNTagViewUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF167F8B864808D2A5949522 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F2F1243CF1A42E35CF360E78 /* [CP] Copy Pods Resources */ = {
+		4F40191A75FCA0C57D42654B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -491,7 +487,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNTagViewTests/Pods-DNTagViewTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F80D8FB392043AD23C0E4609 /* [CP] Check Pods Manifest.lock */ = {
+		E92F47700852DC83ACF5C4DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -506,71 +502,86 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		F1E6BBDD09C057318FADDBCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNTagViewUITests/Pods-DNTagViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F462F2161D78286400CB8899 /* Sources */ = {
+		F4E09C8C1E66AF8500E09061 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4B670D01E66AB280067D298 /* DNTextField.m in Sources */,
-				F4B670CD1E66AB280067D298 /* DNTag.m in Sources */,
-				F4B670CF1E66AB280067D298 /* DNTagView.m in Sources */,
-				F462F2251D78286400CB8899 /* ViewController.m in Sources */,
-				F4B670D31E66ABB60067D298 /* UIColor+Helper.m in Sources */,
-				F4CA31431DB21353003020BD /* DNMultiLineEditViewController.m in Sources */,
-				F4B670CE1E66AB280067D298 /* DNTagButton.m in Sources */,
-				F4D25AD81E44BF50007A642E /* DNMultiLineShowViewController.m in Sources */,
-				F462F2221D78286400CB8899 /* AppDelegate.m in Sources */,
-				F425BF351DB121990052E4F4 /* DNTableViewController.m in Sources */,
-				F462F21F1D78286400CB8899 /* main.m in Sources */,
+				F4E09CE01E66B07900E09061 /* DNTextField.m in Sources */,
+				F4E09CDD1E66B07900E09061 /* DNTag.m in Sources */,
+				F4E09CDF1E66B07900E09061 /* DNTagView.m in Sources */,
+				F4E09CCF1E66B06200E09061 /* DNMultiLineEditViewController.m in Sources */,
+				F4E09CD11E66B06200E09061 /* DNTableViewController.m in Sources */,
+				F4E09CDE1E66B07900E09061 /* DNTagButton.m in Sources */,
+				F4E09C9B1E66AF8600E09061 /* ViewController.m in Sources */,
+				F4E09C981E66AF8600E09061 /* AppDelegate.m in Sources */,
+				F4E09CD41E66B06E00E09061 /* UIColor+Helper.m in Sources */,
+				F4E09CD01E66B06200E09061 /* DNMultiLineShowViewController.m in Sources */,
+				F4E09C951E66AF8600E09061 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F462F22F1D78286400CB8899 /* Sources */ = {
+		F4E09CA51E66AF8600E09061 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F462F2381D78286400CB8899 /* DNTagViewTests.m in Sources */,
+				F4E09CAE1E66AF8600E09061 /* DNTagViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F462F23A1D78286400CB8899 /* Sources */ = {
+		F4E09CB01E66AF8600E09061 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F462F2431D78286400CB8899 /* DNTagViewUITests.m in Sources */,
+				F4E09CB91E66AF8600E09061 /* DNTagViewUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F462F2351D78286400CB8899 /* PBXTargetDependency */ = {
+		F4E09CAB1E66AF8600E09061 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F462F2191D78286400CB8899 /* DNTagView */;
-			targetProxy = F462F2341D78286400CB8899 /* PBXContainerItemProxy */;
+			target = F4E09C8F1E66AF8500E09061 /* DNTagView */;
+			targetProxy = F4E09CAA1E66AF8600E09061 /* PBXContainerItemProxy */;
 		};
-		F462F2401D78286400CB8899 /* PBXTargetDependency */ = {
+		F4E09CB61E66AF8600E09061 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F462F2191D78286400CB8899 /* DNTagView */;
-			targetProxy = F462F23F1D78286400CB8899 /* PBXContainerItemProxy */;
+			target = F4E09C8F1E66AF8500E09061 /* DNTagView */;
+			targetProxy = F4E09CB51E66AF8600E09061 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F462F2261D78286400CB8899 /* Main.storyboard */ = {
+		F4E09C9C1E66AF8600E09061 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F462F2271D78286400CB8899 /* Base */,
+				F4E09C9D1E66AF8600E09061 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F462F22B1D78286400CB8899 /* LaunchScreen.storyboard */ = {
+		F4E09CA11E66AF8600E09061 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F462F22C1D78286400CB8899 /* Base */,
+				F4E09CA21E66AF8600E09061 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -578,7 +589,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F462F2451D78286400CB8899 /* Debug */ = {
+		F4E09CBB1E66AF8600E09061 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -590,6 +601,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -617,14 +629,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		F462F2461D78286400CB8899 /* Release */ = {
+		F4E09CBC1E66AF8600E09061 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -636,6 +648,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -657,16 +670,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		F462F2481D78286400CB8899 /* Debug */ = {
+		F4E09CBE1E66AF8600E09061 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68A9FA15C352987651469216 /* Pods-DNTagView.debug.xcconfig */;
+			baseConfigurationReference = 9287149DC40529B76DB16CE1 /* Pods-DNTagView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DNTagView/Info.plist;
@@ -677,9 +690,9 @@
 			};
 			name = Debug;
 		};
-		F462F2491D78286400CB8899 /* Release */ = {
+		F4E09CBF1E66AF8600E09061 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 260133DDE3DA15FB0B0A41D3 /* Pods-DNTagView.release.xcconfig */;
+			baseConfigurationReference = 4681F849584C55903D0A2805 /* Pods-DNTagView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DNTagView/Info.plist;
@@ -690,51 +703,51 @@
 			};
 			name = Release;
 		};
-		F462F24B1D78286400CB8899 /* Debug */ = {
+		F4E09CC11E66AF8600E09061 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D348F4E6FD37916435B90DD1 /* Pods-DNTagViewTests.debug.xcconfig */;
+			baseConfigurationReference = 15017A576D90E94175661986 /* Pods-DNTagViewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DNTagViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oopser.DNTagViewTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redmist.DNTagViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNTagView.app/DNTagView";
 			};
 			name = Debug;
 		};
-		F462F24C1D78286400CB8899 /* Release */ = {
+		F4E09CC21E66AF8600E09061 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62698369984D7EA006CEDE2F /* Pods-DNTagViewTests.release.xcconfig */;
+			baseConfigurationReference = 2ACEC153162DE26C9AD2BFBD /* Pods-DNTagViewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DNTagViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oopser.DNTagViewTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redmist.DNTagViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DNTagView.app/DNTagView";
 			};
 			name = Release;
 		};
-		F462F24E1D78286400CB8899 /* Debug */ = {
+		F4E09CC41E66AF8600E09061 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D1831DAD16269A6C2AF1670 /* Pods-DNTagViewUITests.debug.xcconfig */;
+			baseConfigurationReference = 2D89AC5EB7361ECD9B2BDD67 /* Pods-DNTagViewUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DNTagViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oopser.DNTagViewUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redmist.DNTagViewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = DNTagView;
 			};
 			name = Debug;
 		};
-		F462F24F1D78286400CB8899 /* Release */ = {
+		F4E09CC51E66AF8600E09061 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE3F6BA0DFD555B6C6AE0212 /* Pods-DNTagViewUITests.release.xcconfig */;
+			baseConfigurationReference = 4E0EAB997ECE52A14B5E169F /* Pods-DNTagViewUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DNTagViewUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oopser.DNTagViewUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redmist.DNTagViewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = DNTagView;
 			};
@@ -743,43 +756,40 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F462F2151D78286400CB8899 /* Build configuration list for PBXProject "DNTagView" */ = {
+		F4E09C8B1E66AF8500E09061 /* Build configuration list for PBXProject "DNTagView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F462F2451D78286400CB8899 /* Debug */,
-				F462F2461D78286400CB8899 /* Release */,
+				F4E09CBB1E66AF8600E09061 /* Debug */,
+				F4E09CBC1E66AF8600E09061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F462F2471D78286400CB8899 /* Build configuration list for PBXNativeTarget "DNTagView" */ = {
+		F4E09CBD1E66AF8600E09061 /* Build configuration list for PBXNativeTarget "DNTagView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F462F2481D78286400CB8899 /* Debug */,
-				F462F2491D78286400CB8899 /* Release */,
+				F4E09CBE1E66AF8600E09061 /* Debug */,
+				F4E09CBF1E66AF8600E09061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		F462F24A1D78286400CB8899 /* Build configuration list for PBXNativeTarget "DNTagViewTests" */ = {
+		F4E09CC01E66AF8600E09061 /* Build configuration list for PBXNativeTarget "DNTagViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F462F24B1D78286400CB8899 /* Debug */,
-				F462F24C1D78286400CB8899 /* Release */,
+				F4E09CC11E66AF8600E09061 /* Debug */,
+				F4E09CC21E66AF8600E09061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		F462F24D1D78286400CB8899 /* Build configuration list for PBXNativeTarget "DNTagViewUITests" */ = {
+		F4E09CC31E66AF8600E09061 /* Build configuration list for PBXNativeTarget "DNTagViewUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F462F24E1D78286400CB8899 /* Debug */,
-				F462F24F1D78286400CB8899 /* Release */,
+				F4E09CC41E66AF8600E09061 /* Debug */,
+				F4E09CC51E66AF8600E09061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F462F2121D78286400CB8899 /* Project object */;
+	rootObject = F4E09C881E66AF8500E09061 /* Project object */;
 }

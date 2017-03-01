@@ -2,8 +2,8 @@
 //  DNTagViewUITests.m
 //  DNTagViewUITests
 //
-//  Created by dawnnnnn on 16/9/1.
-//  Copyright © 2016年 dawnnnnn. All rights reserved.
+//  Created by dawnnnnn on 2017/3/1.
+//  Copyright © 2017年 dawnnnnn. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
