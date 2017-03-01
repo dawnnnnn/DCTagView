@@ -42,7 +42,6 @@ pod 'DNTagView'
     tag.cornerRadius = 3;
     [self.tagView addTag:tag];
   }];
-}
 ```
 
 ####Delegate - optional
