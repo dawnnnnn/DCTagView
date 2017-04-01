@@ -15,8 +15,9 @@ platform :ios, '8.0'
 pod 'DNTagView'
 ```
 
-##Usage
-####Create tag view container
+## Usage
+
+#### Create tag view container
 
 ```objc
 	self.tagView = ({ DNTagView *view = [DNTagView new];
@@ -30,7 +31,8 @@ pod 'DNTagView'
     });
 ```
 
-####Build tag
+
+#### Build tag
 
 ```
   [@[@"Python", @"Javascript", @"HTML", @"Go", @"Objective-C", @"C", @"PHP"] enumerateObjectsUsingBlock:^(NSString *text, NSUInteger idx, BOOL *stop) {
@@ -44,7 +46,8 @@ pod 'DNTagView'
   }];
 ```
 
-####Delegate - optional
+
+#### Delegate - optional
 ``` objc
 - (void)didInputText:(NSString *)text {
     // you input text;
