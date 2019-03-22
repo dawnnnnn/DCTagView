@@ -57,7 +57,11 @@ static CGFloat kCommonPaddingLRTB   = 15.f;
 
 - (void)viewLayoutSubviews {
     [self.tagView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_top).with.offset(64);
+        if (@available(iOS 11.0, *)) {
+            make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop);
+        } else {
+            make.top.equalTo(self.view).offset(64);
+        }
         make.left.and.right.equalTo(self.view);
     }];
     

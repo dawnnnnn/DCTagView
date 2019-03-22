@@ -43,8 +43,12 @@
     [self.view addSubview:self.tagView];
     
     [self.tagView mas_makeConstraints:^(MASConstraintMaker *make) {
+        if (@available(iOS 11.0, *)) {
+            make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop);
+        } else {
+            make.top.equalTo(self.view).offset(64.);
+        }
         make.center.equalTo(self.view);
-        make.top.equalTo(self.view.mas_top).with.offset(64);
         make.trailing.equalTo(self.view);
     }];
 }
