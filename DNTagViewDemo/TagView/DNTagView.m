@@ -159,7 +159,9 @@
 #pragma mark - IBActions
 
 - (void)onTag:(DNTagButton *)btn {
-    
+    if (self.state != DNTagViewStateEdit) {
+        return;
+    }
     self.tmpButton.selected = NO;
     [self.tmpButton setBackgroundColor:self.tmpButton.mtag.bgColor];
     self.tmpButton = btn;
@@ -214,9 +216,7 @@
         [self addTag: tag];
     } else {
         DNTagButton *btn = [DNTagButton buttonWithTag: tag];
-        if (self.state == DNTagViewStateEdit) {
-            [btn addTarget: self action: @selector(onTag:) forControlEvents: UIControlEventTouchUpInside];
-        }
+        [btn addTarget: self action: @selector(onTag:) forControlEvents: UIControlEventTouchUpInside];
         [self insertSubview: btn atIndex: index];
         [self.tags insertObject: tag.text atIndex: index];
         
